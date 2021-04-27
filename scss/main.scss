@@ -1,0 +1,176 @@
+$techMono: 'Share Tech Mono', monospace;
+$oswald:  'Oswald', 'sans-serif';
+$roboto: 'Roboto Condensed', sans-serif;
+$colorNegro:  #161a1d;
+$colorRojoD8:#D80032;
+$colorRojoE: #E5383B;
+$colorRojoBA: #ba181b;
+$colorGris8:#8D99AE;
+
+
+
+@mixin parrafo{
+    color:$colorNegro;
+    font-size: 20px;
+    font-family:  $oswald;
+    word-spacing: 3px;
+    line-height: 35px;
+}
+
+@mixin subtitulos{
+    color: $colorRojoBA;
+    text-align:center;
+    font-size:40px;
+    font-family: $techMono;
+    margin: 0;
+}
+
+
+/*____________INDEX_______________*/
+
+
+
+
+
+
+/*--------FIN INDEX--------------*/
+
+/*____________ NOSOTROS____________*/
+.quienesSomos {
+
+    margin:15px;
+    height: 500px;
+      width: 99%;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 15% 85%;
+      grid-template-areas: 
+                          "quienesSomos"
+                          "texto";
+ 
+    &__titulo {
+    color: $colorNegro;
+    font-size: 40px;
+    font-family: $techMono;
+    text-align: center;
+              }
+
+    &__contenido {
+        @include parrafo;
+        margin: 15px;
+        
+        
+    }          
+    }  
+
+.nuestrosServicios {
+     margin:15px;
+    height: 300px;
+    width: 99%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: 
+                        "nuestrosServicios"
+                        "texto";
+    justify-items: center;
+    align-items: center;
+
+    &__titulo {
+
+        @include subtitulos;
+        color:$colorRojoD8;
+        font-size: 25px;
+    }
+
+    &__lista {
+    color:$colorRojoBA;
+    font-size: 22px;
+    font-family:$techMono;
+    list-style: url(../img/rsz_next.png) ;
+    list-style-position: inside;
+    
+    }
+}    
+
+/*---------FIN NOSOTROS--------------*/
+
+/*_____________PREGUNTAS FRECUENTES______________*/
+
+.preguntas {
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    &__titulo { 
+        grid-area: preguntas;
+    }
+
+    &__lista {
+        font-size: 22px;
+        font-family: $roboto;
+        width:300px;
+        margin-bottom:50px;
+        grid-area:listadoPreguntas;
+
+        &:hover {
+            color:$colorGris8;
+        }
+
+        &:active {
+            text-shadow: 1px 2px 2px $colorNegro;
+        }
+    }
+     
+    &__item a {
+    text-decoration: none;
+    color:$colorRojoE;
+    }
+}
+
+.respuestas {
+   
+    &__contenido {
+        margin:20px;
+    }
+
+    &__titulo {
+         
+        @include subtitulos;
+         text-align: left;
+    }
+
+    &__volver {
+
+     @include parrafo;   
+    
+     color:$colorRojoBA;
+     font-weight: bolder;
+     text-decoration: none; 
+     display:flex;
+     justify-content: flex-end;
+
+
+     &:hover {
+         text-shadow: 1px 1px 2px $colorNegro;
+     }
+     
+     &:active {
+         @extend .respuestas__volver:hover;
+        transform:translateY(3px)
+     }
+
+     }
+    
+
+    &__titulo--sub {
+        font-family: $techMono;
+        color:$colorRojoE;
+        font-size: 18px;
+    }
+  
+
+
+}
+
+/*---------FIN PREGUNTAS FRECUENTES--------------*/
