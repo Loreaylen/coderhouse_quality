@@ -1,3 +1,5 @@
+@import "responsive";
+
 $techMono: 'Share Tech Mono', monospace;
 $oswald:  'Oswald', 'sans-serif';
 $roboto: 'Roboto Condensed', sans-serif;
@@ -174,3 +176,25 @@ $colorGris8:#8D99AE;
 }
 
 /*---------FIN PREGUNTAS FRECUENTES--------------*/
+
+/*________________PRODUCTOS___________________*/
+
+main {
+}
+
+
+.carouselSintes {
+    max-width: 600px;
+    height: 480px;
+    margin: auto;
+
+
+    #carouselExampleDark {
+        @extend .carouselSintes;
+    }
+}
+
+
+
+
+/*--------------FIN PRODUCTOS---------------*/

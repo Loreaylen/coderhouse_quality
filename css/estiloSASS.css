@@ -1,3 +1,4 @@
+/**/
 /*____________INDEX_______________*/
 /*--------FIN INDEX--------------*/
 /*____________ NOSOTROS____________*/
@@ -102,3 +103,10 @@
   font-size: 18px; }
 
 /*---------FIN PREGUNTAS FRECUENTES--------------*/
+/*________________PRODUCTOS___________________*/
+.carouselSintes, .carouselSintes #carouselExampleDark {
+  max-width: 600px;
+  height: 480px;
+  margin: auto; }
+
+/*--------------FIN PRODUCTOS---------------*/
