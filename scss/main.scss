@@ -179,22 +179,61 @@ $colorGris8:#8D99AE;
 
 /*________________PRODUCTOS___________________*/
 
-main {
-}
 
 
 .carouselSintes {
-    max-width: 600px;
-    height: 480px;
+    max-width: 400px;
+    height: 400px;
     margin: auto;
 
 
     #carouselExampleDark {
         @extend .carouselSintes;
     }
+
+    .carousel-caption {
+    position: absolute;
+    top: 250px;
+    margin: 0;
+    padding: 0;
+}
 }
 
 
+.carouselMicros {
+    max-width: 235px;
+    height: 390px;
+    margin: auto;
 
+
+    #carouselDeMicros {
+        @extend .carouselMicros;
+    }
+
+    .carousel-item {
+       height:390px;
+    }
+
+    .carousel-caption {
+    position: absolute;
+    top: 225px;
+    margin: 0;
+    padding: 0;
+}
+}
+
+.reviews{ display:flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+
+
+iframe {
+    height: 405px;
+    width: 720px;
+
+}
+
+}
 
 /*--------------FIN PRODUCTOS---------------*/

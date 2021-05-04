@@ -105,8 +105,34 @@
 /*---------FIN PREGUNTAS FRECUENTES--------------*/
 /*________________PRODUCTOS___________________*/
 .carouselSintes, .carouselSintes #carouselExampleDark {
-  max-width: 600px;
-  height: 480px;
+  max-width: 400px;
+  height: 400px;
   margin: auto; }
+  .carouselSintes .carousel-caption, .carouselSintes #carouselExampleDark .carousel-caption {
+    position: absolute;
+    top: 250px;
+    margin: 0;
+    padding: 0; }
+
+.carouselMicros, .carouselMicros #carouselDeMicros {
+  max-width: 235px;
+  height: 390px;
+  margin: auto; }
+  .carouselMicros .carousel-item, .carouselMicros #carouselDeMicros .carousel-item {
+    height: 390px; }
+  .carouselMicros .carousel-caption, .carouselMicros #carouselDeMicros .carousel-caption {
+    position: absolute;
+    top: 225px;
+    margin: 0;
+    padding: 0; }
+
+.reviews {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px; }
+  .reviews iframe {
+    height: 405px;
+    width: 720px; }
 
 /*--------------FIN PRODUCTOS---------------*/

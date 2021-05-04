@@ -436,42 +436,6 @@ section {
                         "Footer"
 }
 
-table {
-    border:2px solid black;
-}
-
-.tablas {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin: 30px;
-}
-
-.tablas h2 {
-    color:#EF233C;
-    font-size: 30px;
-}
-
-th {
-    color:#d3d3d3;
-    font-size: 23px;
-    font-family: 'Oswald', 'sans-serif';
-    background-color:#ba181b;
-}
-
-tr {
-    color:#161a1d;
-    font-size: 18px;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.reviews {
-   
-    position:relative;
-    left:14%;
-    margin-bottom: 50px;
-    width:1280px;
-}
 
 /* Cuerpo de Preguntas Frecuentes*/
 
