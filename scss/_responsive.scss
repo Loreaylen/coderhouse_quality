@@ -1,11 +1,3 @@
- 
-
-
-
-
-
-
-
 
 
 /*--------------------------MEDIA QUERY LAPTOP -----------------------------------*/ 
@@ -89,30 +81,29 @@ footer {
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-        height: 2500px;
-        grid-template-rows: 6% 2.7% 89% 3
+        height: 2200px;
+        grid-template-rows: 6% 2.7% 89% 3%;
                } 
 
 #contenedorArticle { 
         margin:0;
         height: auto; 
         display:grid;
-        grid-template-rows: 40%  0.1% 12.9% 0.1% 3.9%;
+        grid-template-rows: 40%  12.9% 3.9%;
         grid-template-columns: 100%;
         grid-template-areas: 
                             "textoIndex"
-                            "hr"
                             "seccionMedia"
-                            "hr2"
                             "seccionImg"
                             
                     }
 
 .contenedor {
      height: 100%;
-     max-width: 99%;
+     max-width: 100%;
      display:flex;
-     flex-flow:column;
+     flex-flow:column nowrap;
+     row-gap: 30px;
     
 
     &__img {
@@ -124,11 +115,8 @@ footer {
            } 
 
 
-    &__texto {
-     grid-area: texto;
-     margin-left:10px; 
+    &__texto { 
      max-width: 100%;
-     height:100%;
      height:auto;
      
              }
@@ -137,13 +125,13 @@ footer {
 
 .contenedorMedio {
     height: 100%;
-    grid-template-rows: 8% 92%;
-    grid-area: seccionMedia;
-    grid-row-gap: 20px;
+    display:flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+    padding: 30px;
 
 
     &__titulo {
-    grid-area: grabaciones;
     margin:0;
 }
 
@@ -203,7 +191,7 @@ footer {
 /*---------------------------------------------------------------
                              GENERAL
 ---------------------------------------------------------------*/   
-
+           $padding15: 15px;
 
 /*HEADER*/
 header {
@@ -277,30 +265,31 @@ footer {
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-         height: 2700px;
-        grid-template-rows: 6% 2.33% 89% 3%;
+         height: 2500px;
+        grid-template-rows: 11% 2.33% 84% 3%;
                } 
 
 #contenedorArticle { 
         margin:0;
         height: auto; 
         display:grid;
-        grid-template-rows: 42%  0.1% 22.9% 0.1% 24.9%;
+        grid-template-rows: 42%  20.9% 26.9%;
         grid-template-columns: 100%;
         grid-template-areas: 
                             "textoIndex"
-                            "hr"
                             "seccionMedia"
-                            "hr2"
                             "seccionImg" 
                             
                     }
 
 .contenedor {
+     margin: 40px 0 40px 0;
      height: 100%;
-     max-width: 99%;
+     max-width: 100%;
      display:flex;
      flex-flow:column;
+     row-gap: 20px;
+     grid-area: textoIndex;
     
 
     &__img {
@@ -313,30 +302,31 @@ footer {
 
 
     &__texto {
-     grid-area: texto;
-     margin-left:10px; 
-     max-width: 100%;
-     height:100%;
+    padding:$padding15; 
      
              }
 
              }   
 
 .contenedorMedio {
+    margin: 20px;
     height: 100%;
-    grid-template-rows: 8% 92%;
+    display:flex;
+    flex-flow:column nowrap; 
+    row-gap: 20px;
     grid-area: seccionMedia;
-    grid-row-gap: 20px;
 
 
     &__titulo {
-    grid-area: grabaciones;
     margin:0;
 }
 
 
     &__texto {
     height:100%;
+    height:50%;
+    padding: $padding15;
+    text-align: center;
 
 }
 
@@ -387,6 +377,8 @@ footer {
 
 /*------------MEDIA QUERY TABLET -----------------------*/
 @media only screen and   (min-width:650px)and (max-width:900px) {
+
+    $padding20: 20px;
 
 /*---------------------------------------------------------------
                              GENERAL
@@ -462,21 +454,19 @@ footer {
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-        height: 3000px;
-        grid-template-rows: 5% 7% 87% 3%;
+        height: 2500px;
+        grid-template-rows: 5% 9% 85% 3%;
                } 
 
 #contenedorArticle { 
         margin:0;
         height: auto; 
         display:grid;
-        grid-template-rows: 46%  0.1% 22.9% 0.1% 10.9%;
+        grid-template-rows: 46%  22.9% 10.9%;
         grid-template-columns: 100%;
         grid-template-areas: 
                             "textoIndex"
-                            "hr"
                             "seccionMedia"
-                            "hr2"
                             "seccionImg" 
                     }
 
@@ -484,15 +474,11 @@ footer {
 
 
 .contenedor {
+    margin-top:20px;
     height: 100%; 
-    display:grid; 
-    grid-template-columns: 100%;
-    grid-template-rows: 7% 38% 55%;                                        
-    grid-template-areas:  
-                        "titulo"
-                        "imagen"
-                        "texto" ;
-    grid-row-gap:20px;
+    display:flex;
+    flex-flow: column nowrap;
+    row-gap:20px;
     
 
     &__img {
@@ -505,8 +491,7 @@ footer {
 
 
     &__texto {
-     grid-area: texto;
-     margin-left:4px; 
+     padding:$padding20; 
      max-width: 100%;
      height:100%;
      
@@ -518,9 +503,9 @@ footer {
 
 .contenedorMedio {
     height: 100%;
-    grid-template-rows: 8% 92%;
-    grid-area: seccionMedia;
-    grid-row-gap: 20px;
+    display:flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
 
 
     &__titulo {
@@ -531,6 +516,7 @@ footer {
 
     &__texto {
     height:100%;
+    padding: $padding20;
 
 }
 
@@ -584,6 +570,9 @@ footer {
 /*---------- MEDIA QUERY  MOBILE L / KINDLE  de 401 a 635 --------------*/
 
  @media only screen  and (min-width:513px) and (max-width: 649px) {
+      
+    $fontML: 18px;
+
 /*---------------------------------------------------------------
                              GENERAL
 ---------------------------------------------------------------*/   
@@ -664,21 +653,19 @@ footer {
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-        height: 3500px;
-        grid-template-rows: 5% 5% 87% 3%;
+        height: 2300px;
+        grid-template-rows: 5% 9% 83% 3%;
                }  
 
 #contenedorArticle { 
         margin:0;
         height: 100%; 
         display:grid;
-        grid-template-rows: 50%  0.1% 25.9% 0.3% 23.7%;
+        grid-template-rows: 45%  25.9%  28.7%;
         grid-template-columns: 100%;
         grid-template-areas: 
                             "textoIndex"
-                            "hr"
                             "seccionMedia"
-                            "hr2"
                             "seccionImg";
         justify-items: center;                    
                     
@@ -686,23 +673,14 @@ footer {
 } 
 
 
-
-
-
-
-
-
 .contenedor {
     height: 100%;
     max-width: 95.5%;
-    margin:5px;
-    display:grid; 
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 30% 65%;                                        
-    grid-template-areas:  
-                        "titulo"
-                        "imagen"
-                        "texto" ;
+    margin-top:15px;
+    display:flex; 
+    flex-flow: column nowrap;
+    row-gap: 20px;
+  
                          
     
 
@@ -716,11 +694,10 @@ footer {
 
 
     &__texto {
-     grid-area: texto;
-     margin-left:4px; 
+     padding:10px; 
      max-width: 100%;
      height:auto;
-     align-self:start;
+     font-size: $fontML;
      
              }
 
@@ -730,19 +707,20 @@ footer {
 
 .contenedorMedio {
     height: 100%;
-    grid-template-rows: 8% 92%;
-    margin:40px 15px 0 15px;
-    grid-area: seccionMedia;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+    padding: 20px;
 
-
+   
     &__titulo {
-    grid-area: grabaciones;
     margin:0;
 }
 
 
     &__texto {
     height:100%;
+    font-size: $fontML;
 
 }
 
@@ -753,20 +731,17 @@ footer {
 
 
 #seccionimg{
-    display:grid;
-    margin-top: 20px;
-    grid-template-columns:100%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas: 
-                         "estudio"
-                        "carousel" 
-                        ;
-    
-    grid-column-gap: 0;
+    display:flex;
+    flex-flow: column nowrap;
     grid-area: seccionImg;
     height:100%;
     justify-items:center;
     align-items: center;
+
+   #carouselExampleControls {
+        margin: 10px 0 20px 0;
+    }
+
  }
 
 
@@ -797,6 +772,8 @@ footer {
 @media only screen  and (min-width:300px) and (max-width: 512px) {
 
 
+    $fontS: 16px;
+
 /*---------------------------------------------------------------
                              GENERAL
 ---------------------------------------------------------------*/   
@@ -839,7 +816,7 @@ footer {
     align-items: center;
 
    p {
-    font-size:22px;
+    font-size:$fontS;
     margin: 0;
     padding:0;
    }
@@ -861,38 +838,32 @@ footer {
   } 
 
 
-
-
-
 /*FIN FOOTER*/
-
-
 
 /*---------------------------------------------------------------
                          FIN GENERAL
 ---------------------------------------------------------------*/
 
 
+
 /*---------------------------------------------------------------
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-        height: 4300px;
-        grid-template-rows: 5% 6% 86% 3%;
+        height: 2700px;
+        grid-template-rows: 5% 7% 85% 3%;
                } 
 
 #contenedorArticle { 
         margin:0;
         height: auto; 
         display:grid;
-        grid-template-rows: 49%  0.1% 37.9% 0.1% 12.9%;
+        grid-template-rows: 45.3%  30.3% 24.3%;
         grid-template-columns: 100%;
         grid-template-areas: 
                             "textoIndex"
-                            "hr"
                             "seccionMedia"
-                            "hr2"
-                            "seccionImg" 
+                            "seccionImg" ;
                     }
 
 
@@ -904,31 +875,28 @@ footer {
 
 .contenedor {
     height: 100%;
-    max-width: 95.5%;
-    margin:5px;
-    display:grid; 
-    grid-template-columns: 100%;
-    grid-template-rows: 5% 20% 75%;                                        
-    grid-template-areas:  
-                        "titulo"
-                        "imagen"
-                        "texto" ;
+    max-width: 100%;
+    margin-top:45px;
+    display:flex; 
+    flex-flow: column nowrap;
+    row-gap: 20px;
+    grid-area: textoIndex;
     
+  
 
     &__img {
-    
-    height: auto;
     max-width: 99%;
+    height:auto;
     padding:0;
     margin:0;
            } 
 
 
     &__texto {
-     grid-area: texto;
-     margin-left:4px; 
      max-width: 100%;
      height:auto;
+     padding:15px;
+     font-size: $fontS;
      
              }
 
@@ -938,19 +906,21 @@ footer {
 
 .contenedorMedio {
     height: 100%;
-    grid-template-rows: 8% 92%;
-    margin:15px;
-    grid-area: seccionMedia;
+    padding:15px;
+    display:flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+
 
 
     &__titulo {
-    grid-area: grabaciones;
     margin:0;
 }
 
 
     &__texto {
     height:100%;
+    font-size: $fontS;
 
 }
 
@@ -961,20 +931,16 @@ footer {
 
 
 #seccionimg{
-    display:grid;
-    margin-top: 20px;
-    grid-template-columns:100%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas: 
-                         "estudio"
-                        "carousel" 
-                        ;
-    
-    grid-column-gap: 0;
+    display:flex;
+    flex-flow: column nowrap;
     grid-area: seccionImg;
     height:100%;
     justify-items:center;
     align-items: center;
+
+    #carouselExampleControls {
+        margin: 20px 0 20px 0;
+    }
  }
 
 

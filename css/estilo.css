@@ -133,7 +133,6 @@ nav {
 /* General */
 
 body {
-    background-color:#d3d3d3;
     margin: 0;
     padding: 0;
 
@@ -195,81 +194,14 @@ section {
 }
 
 
-/*_______________________________________________________________________________                               
-|                            REEMPLAZADO POR BOOTSTRAP                           | 
-|________________________________________________________________________________|  */
-
-/* .galeria {
-    height: auto;
-    max-width:100%;
-    margin: 0;
-    border: 2px solid #BA181B;
-    transition: transform 0.5s;
-
-} */
-
-
-/* 
-
-#seccionimg{
-    
-    height:1150px;
-    width: 98vw;
-    display:grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows: 10% 45% 45%;
-    grid-template-areas: 
-                        "estudio estudio"
-                        "imgUno imgDos"
-                        "imgTres imgCuatro";
-    
-    align-items: center;
-    grid-column-gap: 10px;
-} */
-
-
-/* #imgUno{ 
-    grid-area:imgUno;
-    justify-self: end;
-}
-
-#imgUno:hover {
-    transform: translate(50%, 50%) scale(1.1);
-    border:3px solid grey;
-}
-#imgDos{
-    grid-area:imgDos;
-    
-}
-
-#imgDos:hover {
-    transform: translate(-50%, 50%) scale(1.1);
-    border: 3px solid grey;
-}
-
-#imgTres{
-    grid-area:imgTres;
-    justify-self: end;
-}
-
-#imgTres:hover {
-    transform: translate(50%, -50%) scale(1.1);
-    border: 3px solid grey;
-}
-
-#imgCuatro{
-    grid-area:imgCuatro;
-   
-}
-
-#imgCuatro:hover {
-    transform: translate(-50%, -50%) scale(1.1);
-    border: 3px solid grey;
-}
- */
-/*________________________________________________________________________________________________
-|_________________________________________________________________________________________________| */
-
+#contenedorArticle { 
+        margin:0;
+        height: auto; 
+        display:flex;
+        flex-flow: column nowrap;
+        row-gap: 70px; 
+                            
+                    }
 
 
 #carouselExampleControls {
@@ -281,16 +213,7 @@ section {
 }
 
 
-
-#imagenes {
-   color:#8D99AE;
-   font-size:40px;
-   /* grid-area:estudio; */
-}
- 
-
-
-#textoIndex {
+.contenedor {
     height: 600px;
     width: 100%; 
     display:grid;
@@ -305,12 +228,12 @@ section {
 }
 
 
-#tituloProducciones {
+.contenedor__titulo {
     grid-area: titulo;
     margin-top:20px;
 }
 
-#textoIndex p {
+.contenedor__texto {
     width: 800px;
     height: 300px;
     grid-area: texto;
@@ -319,16 +242,16 @@ section {
     
 }
 
-#imgIndex {
+.contenedor__img {
     
     grid-area: imagen;
     height: 450px;
     width: 675px;
-    padding:10px;
+    padding:0;
     border:2px solid #ba181b;
 }
 
-#imgIndex:hover {
+.contenedor__img:hover {
     transform: scale(0.95);
     border: 3px solid grey;
     
@@ -344,6 +267,7 @@ section {
     margin:15px;
     justify-items: center;
     align-items: center;
+    background-color: #8D99AE;
 }
 
 #tituloGrabaciones {
@@ -354,6 +278,7 @@ section {
 #seccionMedia p {
     margin:25px;
 }
+
 
 
 /* Cuerpo de Nosotros*/
@@ -373,52 +298,6 @@ section {
 }
 
 
-/* ______________________________________________      
-|                 REEMPLAZADO POR SASS         |
-|______________________________________________*/
-
-/* #contenedorQuienesSomos {
-      margin:15px;
-      height: 500px;
-      width: 99%;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 15% 85%;
-      grid-template-areas: 
-                          "quienesSomos"
-                          "texto"
-} */
-
-/* #contenedorNuestrosServicios {
-    margin:15px;
-    height: 300px;
-    width: 99%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 85%;
-    grid-template-areas: 
-                        "nuestrosServicios"
-                        "texto";
-    justify-items: center;
-    align-items: center;
-}
-#nuestrosServicios {
-    color:#D80032;
-    font-size: 25px;
-}
-
-#losServicios {
-    
-    color:#ba181b;
-    font-size: 22px;
-    font-family:'Share Tech Mono', monospace;
-    list-style: url(../img/rsz_next.png) ;
-    list-style-position: inside;
-    
-
-} */
-
-/*___________________________________________*/
 
 /* Cuerpo de Productos*/
 
@@ -453,86 +332,6 @@ section {
                         "Footer"
 }
 
-/* ______________________________________________      
-|                 REEMPLAZADO POR SASS         |
-|______________________________________________*/
-
-
-/* #contenedorPreguntas {
-    display:flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-                                 
-#contenedorRespuestas {
-    display: flex;
-    flex-flow: column wrap;
-    margin: 0 20px 0 20px;
-    
-}
-
-
-#preguntas {
-    grid-area: preguntas;
-}
-
-.tituloPreguntas {
-   text-align: left;
-}
-
-.sublista {
-   font-family: 'Share Tech Mono', monospace;
-   color:#E5383B;
-}
-
-.volver {
-     font-family:'Oswald', 'sans-serif';
-     color:#ba181b;
-     font-weight: bolder;
-     font-size: 18px;
-     text-decoration: none; 
-     display:flex;
-     justify-content: flex-end;
-     margin-right: 30px;   
-}
-
-.volver:hover {
-    text-shadow: 2px 3px 3px #161a1d;
-}
-
-.volver:active {
-    text-shadow: 1px 1px 2px #161a1d;
-    transform:translateY(3px)
-}
-
-#listadoPreguntas {
-          
-    font-size: 22px;
-    font-family: 'Roboto Condensed', sans-serif;
-    width:300px;
-    margin-bottom:50px;
-    grid-area:listadoPreguntas;
-    
-}
-
-#listadoPreguntas li a:hover {
-    color:#8D99AE;
-}
-
-#listadoPreguntas li a:active {
-    text-shadow: 1px 2px 2px #161a1d;
-}
-
-#listadoPreguntas li a{
-    text-decoration: none;
-    color:#E5383B
-}
-
-h3 {
-    color:#B1A7A6;
-} */
-
-/*___________________________________________*/
 
 
 /*Cuerpo de Contacto*/
@@ -773,24 +572,3 @@ footer p {
     100% {transform:rotateY(360deg)}
 
 }
-
-
-
-
- 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
