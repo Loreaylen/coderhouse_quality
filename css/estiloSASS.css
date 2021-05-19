@@ -1,3 +1,11 @@
+@media only screen and (min-width: 1541px) and (max-width: 1660px) {
+  footer .redesSociales {
+    padding: 0 20px 0 20px;
+    width: 20%;
+    justify-content: space-evenly; }
+    footer .redesSociales li {
+      margin: 5px; } }
+
 /*--------------------------MEDIA QUERY LAPTOP -----------------------------------*/
 @media only screen and (min-width: 1225px) and (max-width: 1540px) {
   /*---------------------------------------------------------------
@@ -173,6 +181,7 @@
     grid-area: textoIndex; }
     .contenedor__img {
       max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
       height: auto;
       padding: 0;
       margin: 0; }
@@ -203,7 +212,7 @@
     justify-items: center;
     align-items: center; }
     #seccionimg #carouselExampleControls {
-      max-width: 90%; }
+      max-width: 80%; }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -280,6 +289,7 @@
     row-gap: 20px; }
     .contenedor__img {
       max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
       height: auto;
       padding: 0;
       margin: 0; }
@@ -309,7 +319,8 @@
     justify-items: center;
     align-items: center; }
     #seccionimg #carouselExampleControls {
-      max-width: 90%; }
+      max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -388,6 +399,7 @@
     row-gap: 20px; }
     .contenedor__img {
       max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
       height: auto;
       padding: 0;
       margin: 0; }
@@ -415,7 +427,8 @@
     justify-items: center;
     align-items: center; }
     #seccionimg #carouselExampleControls {
-      max-width: 90%; }
+      max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -494,6 +507,7 @@
     grid-area: textoIndex; }
     .contenedor__img {
       max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
       height: auto;
       padding: 0;
       margin: 0; }
@@ -522,7 +536,8 @@
     align-items: center;
     padding-bottom: 20px; }
     #seccionimg #carouselExampleControls {
-      max-width: 90%; }
+      max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/

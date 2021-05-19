@@ -26,7 +26,7 @@
 
 .nombreEstudio {
           
-    color:#D80032 ;
+    color:#660708 ;
     font-size: 100px;
     font-family: 'Share Tech Mono', monospace;
     text-align: center;
@@ -39,6 +39,7 @@ header {
     background-image: url(../img/2_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover ;
+    opacity: 0.7;
      margin: 0;
      width: 100%; 
     grid-area: Header;
@@ -514,6 +515,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     grid-area: Footer;
+    margin:0;
 
 
 }
