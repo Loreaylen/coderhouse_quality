@@ -1,4 +1,9 @@
+$gap: 10px;
 
+@mixin maxAncho {
+ max-width: 90%;
+     
+}
 
 /*--------------------------MEDIA QUERY LAPTOP -----------------------------------*/ 
 
@@ -37,6 +42,7 @@ header {
 /*FOOTER*/
 
 footer {
+
     width: 100%;
     display: grid;
     grid-template-columns:100%;
@@ -59,6 +65,7 @@ footer {
     padding: 0 20px 0 20px;
     width: 50%;
     justify-content: space-evenly; 
+    column-gap:10px;
 
     li { margin: 5px;}
 
@@ -89,6 +96,7 @@ footer {
         margin:0;
         height: auto; 
         display:grid;
+        row-gap: $gap;
         grid-template-rows: 40%  12.9% 3.9%;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -273,6 +281,7 @@ footer {
         margin:0;
         height: auto; 
         display:grid;
+        row-gap: $gap;
         grid-template-rows: 42%  20.9% 26.9%;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -293,9 +302,8 @@ footer {
     
 
     &__img {
-    
+    @include maxAncho;
     height: auto;
-    max-width: 99%;
     padding:0;
     margin:0;
            } 
@@ -349,7 +357,12 @@ footer {
     height:100%;
     justify-items:center;
     align-items: center;
+
+    #carouselExampleControls {
+         @include maxAncho;
+     }
  }
+
 
 
 /*---------------------------------------------------------------
@@ -375,7 +388,7 @@ footer {
    
 
 
-/*------------MEDIA QUERY TABLET -----------------------*/
+/*---------------------MEDIA QUERY TABLET -----------------------*/
 @media only screen and   (min-width:650px)and (max-width:900px) {
 
     $padding20: 20px;
@@ -462,6 +475,7 @@ footer {
         margin:0;
         height: auto; 
         display:grid;
+        row-gap: $gap;
         grid-template-rows: 46%  22.9% 10.9%;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -482,9 +496,8 @@ footer {
     
 
     &__img {
-    
+    @include maxAncho;
     height: auto;
-    max-width: 99%;
     padding:0;
     margin:0;
            } 
@@ -539,6 +552,10 @@ footer {
     height:100%;
     justify-items:center;
     align-items: center;
+
+     #carouselExampleControls {
+         @include maxAncho;
+     }
  }
 
 
@@ -661,6 +678,7 @@ footer {
         margin:0;
         height: 100%; 
         display:grid;
+        row-gap: $gap;
         grid-template-rows: 45%  25.9%  28.7%;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -685,9 +703,8 @@ footer {
     
 
     &__img {
-    
+    @include maxAncho;
     height: auto;
-    max-width: 99%;
     padding:0;
     margin:0;
            } 
@@ -739,7 +756,7 @@ footer {
     align-items: center;
 
    #carouselExampleControls {
-        margin: 10px 0 20px 0;
+        @include maxAncho;
     }
 
  }
@@ -766,6 +783,9 @@ footer {
 ---------------------------------------------------------------*/
 
 }
+
+
+
 
 /*------- -------------MEDIA QUERY CELULAR S / M ----- ---------- ---------*/
 
@@ -805,6 +825,7 @@ header {
 /*FOOTER*/
 
 footer {
+  
     width: 100%;
     display: grid;
     grid-template-columns:100%;
@@ -849,29 +870,23 @@ footer {
 /*---------------------------------------------------------------
                             INDEX
 ---------------------------------------------------------------*/
-  #grillaIndex {
-        height: 2700px;
-        grid-template-rows: 5% 7% 85% 3%;
+#grillaIndex {
+        height: 2500px;
+        grid-template-rows: 5% 9% 83% 3%;
                } 
 
 #contenedorArticle { 
         margin:0;
         height: auto; 
         display:grid;
-        grid-template-rows: 45.3%  30.3% 24.3%;
+        row-gap:$gap;
+        grid-template-rows: 45.3%  28.3% 26.3%;
         grid-template-columns: 100%;
         grid-template-areas: 
                             "textoIndex"
                             "seccionMedia"
                             "seccionImg" ;
                     }
-
-
-
-
-
-
-
 
 .contenedor {
     height: 100%;
@@ -885,7 +900,7 @@ footer {
   
 
     &__img {
-    max-width: 99%;
+    @include maxAncho;
     height:auto;
     padding:0;
     margin:0;
@@ -902,10 +917,8 @@ footer {
 
              }   
 
-
-
 .contenedorMedio {
-    height: 100%;
+    height: 80%;
     padding:15px;
     display:flex;
     flex-flow: column nowrap;
@@ -929,18 +942,20 @@ footer {
 
 }
 
-
 #seccionimg{
     display:flex;
     flex-flow: column nowrap;
     grid-area: seccionImg;
-    height:100%;
+    min-height:90%;
     justify-items:center;
     align-items: center;
+    padding-bottom: 20px;
 
     #carouselExampleControls {
-        margin: 20px 0 20px 0;
-    }
+         @include maxAncho;
+     }
+
+
  }
 
 

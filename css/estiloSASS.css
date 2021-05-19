@@ -34,7 +34,8 @@
     footer .redesSociales {
       padding: 0 20px 0 20px;
       width: 50%;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      column-gap: 10px; }
       footer .redesSociales li {
         margin: 5px; }
       footer .redesSociales__img {
@@ -54,6 +55,7 @@
     margin: 0;
     height: auto;
     display: grid;
+    row-gap: 10px;
     grid-template-rows: 40%  12.9% 3.9%;
     grid-template-columns: 100%;
     grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
@@ -158,6 +160,7 @@
     margin: 0;
     height: auto;
     display: grid;
+    row-gap: 10px;
     grid-template-rows: 42%  20.9% 26.9%;
     grid-template-columns: 100%;
     grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
@@ -170,8 +173,8 @@
     row-gap: 20px;
     grid-area: textoIndex; }
     .contenedor__img {
+      max-width: 90%;
       height: auto;
-      max-width: 99%;
       padding: 0;
       margin: 0; }
     .contenedor__texto {
@@ -200,6 +203,8 @@
     height: 100%;
     justify-items: center;
     align-items: center; }
+    #seccionimg #carouselExampleControls {
+      max-width: 90%; }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -212,7 +217,7 @@
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/ }
 
-/*------------MEDIA QUERY TABLET -----------------------*/
+/*---------------------MEDIA QUERY TABLET -----------------------*/
 @media only screen and (min-width: 650px) and (max-width: 900px) {
   /*---------------------------------------------------------------
                              GENERAL
@@ -264,6 +269,7 @@
     margin: 0;
     height: auto;
     display: grid;
+    row-gap: 10px;
     grid-template-rows: 46%  22.9% 10.9%;
     grid-template-columns: 100%;
     grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
@@ -274,8 +280,8 @@
     flex-flow: column nowrap;
     row-gap: 20px; }
     .contenedor__img {
+      max-width: 90%;
       height: auto;
-      max-width: 99%;
       padding: 0;
       margin: 0; }
     .contenedor__texto {
@@ -303,6 +309,8 @@
     height: 100%;
     justify-items: center;
     align-items: center; }
+    #seccionimg #carouselExampleControls {
+      max-width: 90%; }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -367,6 +375,7 @@
     margin: 0;
     height: 100%;
     display: grid;
+    row-gap: 10px;
     grid-template-rows: 45%  25.9%  28.7%;
     grid-template-columns: 100%;
     grid-template-areas: "textoIndex" "seccionMedia" "seccionImg";
@@ -379,8 +388,8 @@
     flex-flow: column nowrap;
     row-gap: 20px; }
     .contenedor__img {
+      max-width: 90%;
       height: auto;
-      max-width: 99%;
       padding: 0;
       margin: 0; }
     .contenedor__texto {
@@ -407,7 +416,7 @@
     justify-items: center;
     align-items: center; }
     #seccionimg #carouselExampleControls {
-      margin: 10px 0 20px 0; }
+      max-width: 90%; }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -466,13 +475,14 @@
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-    height: 2700px;
-    grid-template-rows: 5% 7% 85% 3%; }
+    height: 2500px;
+    grid-template-rows: 5% 9% 83% 3%; }
   #contenedorArticle {
     margin: 0;
     height: auto;
     display: grid;
-    grid-template-rows: 45.3%  30.3% 24.3%;
+    row-gap: 10px;
+    grid-template-rows: 45.3%  28.3% 26.3%;
     grid-template-columns: 100%;
     grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
   .contenedor {
@@ -484,7 +494,7 @@
     row-gap: 20px;
     grid-area: textoIndex; }
     .contenedor__img {
-      max-width: 99%;
+      max-width: 90%;
       height: auto;
       padding: 0;
       margin: 0; }
@@ -494,7 +504,7 @@
       padding: 15px;
       font-size: 16px; }
   .contenedorMedio {
-    height: 100%;
+    height: 80%;
     padding: 15px;
     display: flex;
     flex-flow: column nowrap;
@@ -508,11 +518,12 @@
     display: flex;
     flex-flow: column nowrap;
     grid-area: seccionImg;
-    height: 100%;
+    min-height: 90%;
     justify-items: center;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 20px; }
     #seccionimg #carouselExampleControls {
-      margin: 20px 0 20px 0; }
+      max-width: 90%; }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
