@@ -34,8 +34,7 @@
     footer .redesSociales {
       padding: 0 20px 0 20px;
       width: 50%;
-      justify-content: space-evenly;
-      column-gap: 10px; }
+      justify-content: space-evenly; }
       footer .redesSociales li {
         margin: 5px; }
       footer .redesSociales__img {
