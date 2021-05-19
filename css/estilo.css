@@ -535,7 +535,7 @@ footer p {
     padding-right: 15px ;
     width: 10%;
     display:flex;
-    flex-flow: row;
+    flex-direction: row;
     column-gap:10px;
     justify-content: space-evenly;
     
