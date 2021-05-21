@@ -389,21 +389,51 @@ iframe {
                         "Section"
                         "Footer"
 }
+.consulta label{
 
+    margin-top: -44px;
+}
+.consulta label{
+    margin-bottom: 12px;
+}
 form {
-    display:flex;
-    justify-content: center ;
-    margin:40px;
-
-fieldset {
-    width:500px;
-    height:1200px;
-    margin:50px;
+    background-color: $colorGrisf;
+    padding:20px;
+    margin: auto;
+    width: 50%;
+    height:auto;   
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+                         "nombre     mail"
+                         "apellido   consulta"
+                         "servicio  consulta"
+                         "formacion   consulta"
+                          "novedades novedades"
+                          "submit     submit";
+    justify-items:center;
+    align-items:center;
+    row-gap: 20px;    
     text-align: center;
-    border:1px solid $colorGris8;
-    margin: 0;
-    padding: 0;
+    border-radius: 5px;
+
+
+
+  
     
+    .nombre { grid-area: nombre; }
+    .apellido { grid-area:apellido; }
+    .formacion {grid-area:formacion;}
+    .servicio {grid-area:servicio;}
+    .mail {grid-area:mail;}
+    .consulta {grid-area:consulta;}
+    .novedades {grid-area:novedades;}
+    .submit {grid-area:submit;}
+
+
+
+
     legend {
     padding: 20px;   
     font-size: 26px;
@@ -422,18 +452,16 @@ fieldset {
     margin-bottom:10px;
 
 
-}
 
+}
+    
     
     input  {
     
     font-family: 'Oswald', 'sans-serif';
-    height: 30px;
+    height: 40px;
     width:350px;
     border:1px solid $colorGris8;
-    border-top: none;
-    border-left: none;
-    border-right: none;
     background-color: transparent;
     outline: none;
 
@@ -466,7 +494,7 @@ select, option {
     color:$colorGris8;
     font-size:15px ;
     font-family:'Share Tech Mono', monospace;
-    height:30px;
+    height:40px;
     width:360px;
     background-color: transparent;
     border:1px solid $colorGris8;
@@ -487,8 +515,8 @@ textarea {
     background-color:$colorRojoBA;
     letter-spacing: 1px;
     font-size: 15px;
-    height: 30px;
-    width: 80px;
+    height: 40px;
+    width: 150px;
     display: inline-block;
     margin: 10px 20px 0 20px;
     border: none;
@@ -534,7 +562,7 @@ textarea {
     &:hover {
     color:$colorNegro;
 }
-}
+
 
 }
 

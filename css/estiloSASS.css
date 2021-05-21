@@ -787,102 +787,124 @@
   grid-template-columns: 100%;
   grid-template-areas: "Header" "Nav" "Section" "Footer"; }
 
+.consulta label {
+  margin-top: -44px; }
+
+.consulta label {
+  margin-bottom: 12px; }
+
 form {
-  display: flex;
-  justify-content: center;
-  margin: 40px; }
-  form fieldset {
-    width: 500px;
-    height: 1200px;
-    margin: 50px;
-    text-align: center;
+  background-color: #f3f4f5;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "nombre     mail" "apellido   consulta" "servicio  consulta" "formacion   consulta" "novedades novedades" "submit     submit";
+  justify-items: center;
+  align-items: center;
+  row-gap: 20px;
+  text-align: center;
+  border-radius: 5px; }
+  form .nombre {
+    grid-area: nombre; }
+  form .apellido {
+    grid-area: apellido; }
+  form .formacion {
+    grid-area: formacion; }
+  form .servicio {
+    grid-area: servicio; }
+  form .mail {
+    grid-area: mail; }
+  form .consulta {
+    grid-area: consulta; }
+  form .novedades {
+    grid-area: novedades; }
+  form .submit {
+    grid-area: submit; }
+  form legend {
+    padding: 20px;
+    font-size: 26px;
+    color: #ba181b;
+    font-family: 'Roboto Condensed', sans-serif; }
+  form label {
+    color: #E5383B;
+    font-family: 'Oswald', 'sans-serif';
+    letter-spacing: 1px;
+    font-weight: bolder;
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px; }
+  form input {
+    font-family: 'Oswald', 'sans-serif';
+    height: 40px;
+    width: 350px;
     border: 1px solid #8D99AE;
-    margin: 0;
-    padding: 0; }
-    form fieldset legend {
-      padding: 20px;
-      font-size: 26px;
-      color: #ba181b;
-      font-family: 'Roboto Condensed', sans-serif; }
-    form fieldset label {
-      color: #E5383B;
-      font-family: 'Oswald', 'sans-serif';
-      letter-spacing: 1px;
-      font-weight: bolder;
-      display: block;
-      font-size: 20px;
-      margin-bottom: 10px; }
-    form fieldset input {
-      font-family: 'Oswald', 'sans-serif';
-      height: 30px;
-      width: 350px;
-      border: 1px solid #8D99AE;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      background-color: transparent;
-      outline: none; }
-      form fieldset input:hover {
-        border-bottom: 1px solid #161a1d; }
-    form fieldset .radio {
-      height: 15px;
-      width: 15px;
-      display: inline-block;
-      background-color: transparent; }
-    form fieldset select {
-      outline: none; }
-      form fieldset select:hover {
-        border: 1px solid #161a1d; }
-    form fieldset select, form fieldset option {
-      color: #8D99AE;
-      font-size: 15px;
-      font-family: 'Share Tech Mono', monospace;
-      height: 30px;
-      width: 360px;
-      background-color: transparent;
-      border: 1px solid #8D99AE; }
-    form fieldset textarea {
-      min-height: 200px;
-      min-width: 350px;
-      background-color: transparent;
-      border: 1px solid #8D99AE;
-      outline: none; }
-    form fieldset .boton {
-      color: #f3f4f5;
-      font-family: 'Oswald', 'sans-serif';
-      font-weight: bolder;
-      background-color: #ba181b;
-      letter-spacing: 1px;
-      font-size: 15px;
-      height: 30px;
-      width: 80px;
-      display: inline-block;
-      margin: 10px 20px 0 20px;
+    background-color: transparent;
+    outline: none; }
+    form input:hover {
+      border-bottom: 1px solid #161a1d; }
+  form .radio {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    background-color: transparent; }
+  form select {
+    outline: none; }
+    form select:hover {
+      border: 1px solid #161a1d; }
+  form select, form option {
+    color: #8D99AE;
+    font-size: 15px;
+    font-family: 'Share Tech Mono', monospace;
+    height: 40px;
+    width: 360px;
+    background-color: transparent;
+    border: 1px solid #8D99AE; }
+  form textarea {
+    min-height: 200px;
+    min-width: 350px;
+    background-color: transparent;
+    border: 1px solid #8D99AE;
+    outline: none; }
+  form .boton {
+    color: #f3f4f5;
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: bolder;
+    background-color: #ba181b;
+    letter-spacing: 1px;
+    font-size: 15px;
+    height: 40px;
+    width: 150px;
+    display: inline-block;
+    margin: 10px 20px 0 20px;
+    border: none;
+    box-shadow: 1px 2px 2px #161a1d; }
+    form .boton:hover {
+      transform: translateY(-2px);
+      box-shadow: 2px 3px 2px #161a1d; }
+    form .boton:active {
       border: none;
-      box-shadow: 1px 2px 2px #161a1d; }
-      form fieldset .boton:hover {
-        transform: translateY(-2px);
-        box-shadow: 2px 3px 2px #161a1d; }
-      form fieldset .boton:active {
-        border: none;
-        transform: translateY(1px); }
-    form fieldset #checkbox {
-      padding: 0;
-      margin: 0;
-      height: 20px;
-      width: 20px; }
-    form fieldset #novedades {
-      font-size: 15px;
-      padding: 0;
-      margin: 0;
-      display: inline-block; }
-    form fieldset .etiquetaDos {
-      display: inline-block;
-      color: #8D99AE;
-      font-size: 15px;
-      margin: 10px;
-      padding: 0; }
-      form fieldset .etiquetaDos:hover {
-        color: #161a1d; }
+      transform: translateY(1px); }
+  form #checkbox {
+    padding: 0;
+    margin: 0;
+    height: 20px;
+    width: 20px; }
+  form #novedades {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    display: inline-block; }
+  form .etiquetaDos {
+    display: inline-block;
+    color: #8D99AE;
+    font-size: 15px;
+    margin: 10px;
+    padding: 0; }
+    form .etiquetaDos:hover {
+      color: #161a1d; }
 
 /*---------------FIN CONTACTO--------------*/
