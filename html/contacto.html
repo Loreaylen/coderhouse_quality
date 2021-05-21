@@ -7,6 +7,9 @@
     <meta name="keywords" content="Contacto, formulario, formulario de contacto, Nombre, email, apellido, servicio, mensaje">
     <meta name="description" content="Formulario de contacto del estudio Quality sounds.">
     <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/estiloSASS.css">
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -101,75 +104,73 @@
 
 <form action="#" method="GET">
 
- <fieldset>
-<legend>Formulario de contacto</legend>
-<label for="nombre">Nombre</label>
+ 
+ 
+<div class="nombre">
+<label for="nombre" >Nombre</label>
 <br>
-<input type="text" name="" id="nombre" placeholder="Introduzca su nombre" required >
+<input type="text" name="" id="nombre"  placeholder="Introduzca su nombre" required >
+</div>
 
-<br>
-<br>
-
+<div class="apellido">
 <label for="apellido">Apellido</label>
 <br>
 <input type="text" name="" id="apellido" placeholder="Introduzca su apellido" required>
+</div>
 
-<br>
-<br>
-
-<label for="sexo">Sexo</label>
-<br>
-
-<input type="radio" id="hombre" name="sexo" class="radio">
-<label for="hombre" class="etiquetaDos">Hombre</label>
-
-<input type="radio" id="mujer"  name="sexo" class="radio">
-<label for="mujer" class="etiquetaDos">Mujer</label>
-
-
-<input type="radio" id="indistinto"  name="sexo" class="radio">
-<label for="indistinto" class="etiquetaDos">Indistinto</label>
-
-
-
-<br>
-<br>
-<label for="mail">Correo electrónico</label>
-<br>
-<input type="email" id="mail"  placeholder="usuario@ejemplo.com" required>
-
-<br>
-<br>
-
-<label for="servicio">Servicio</label>
+<div class="servicio">
+  <label for="servicio">Servicio</label>
 <br>
 <select id="servicio">
     <option value="arreglo">Instrumentación</option>
     <option value="usoEstudio">Grabación</option>
     <option value="compra">Compra</option>
 </select>
+</div>
 
-<br>
-<br>
+<div class="formacion">
+<label for="formacion">Formación</label>
 
+
+<input type="radio" id="solista" name="formacion" class="radio">
+<label for="solista" class="etiquetaDos">Solista</label>
+
+<input type="radio" id="agrupacion"  name="formacion" class="radio">
+<label for="agrupacion" class="etiquetaDos">Agrupación</label>
+
+<input type="radio" id="ensamble"  name="formacion" class="radio">
+<label for="ensamble" class="etiquetaDos">Ensamble</label>
+
+</div>
+
+
+
+<div class="mail">
+<label for="mail">Correo electrónico</label>
+<br>
+<input type="email" id="mail"  placeholder="usuario@ejemplo.com" required>
+
+</div>
+
+
+
+<div class="consulta">
 <label for="consulta">Mensaje</label>
 <br>
 <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Escriba aquí"></textarea>
+</div>
 
-<br>
-<br>
-
+<div class="novedades">
 <input type="checkbox" name="newsletter" id="checkbox"> 
 <label for="checkbox" id="novedades">Deseo recibir las novedades en productos y servicios.</label>
+</div>
 
-
-<br>
-<br>
+<div class="submit">
 <input type="submit" value="Enviar" class="boton" data-bs-toggle="modal" data-bs-target="#modalContacto">
 
 <input type="reset" value="Limpiar" class="boton">
+</div>
 
- </fieldset>
 
 </form>
 
