@@ -389,22 +389,16 @@ iframe {
                         "Section"
                         "Footer"
 }
-.consulta label{
 
-    margin-top: -44px;
-}
-.consulta label{
-    margin-bottom: 12px;
-}
 form {
     background-color: $colorGrisf;
     padding:20px;
     margin: auto;
-    width: 50%;
+    max-width: 50%;
     height:auto;   
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
                          "nombre     mail"
                          "apellido   consulta"
@@ -420,16 +414,16 @@ form {
 
 
 
-  
+  .nombre {grid-area: nombre;}
+  .apellido {grid-area:apellido;}
+  .formacion {grid-area: formacion;}
+  .servicio {grid-area: servicio;}
+  .mail {grid-area: mail;}
+  .consulta {grid-area: consulta;}
+  .novedades {grid-area: novedades;}
+  .submit {grid-area: submit;}
     
-    .nombre { grid-area: nombre; }
-    .apellido { grid-area:apellido; }
-    .formacion {grid-area:formacion;}
-    .servicio {grid-area:servicio;}
-    .mail {grid-area:mail;}
-    .consulta {grid-area:consulta;}
-    .novedades {grid-area:novedades;}
-    .submit {grid-area:submit;}
+   
 
 
 
@@ -502,10 +496,11 @@ select, option {
 
 textarea {
     min-height: 200px;
-    min-width: 350px;
+    min-width: 250px;
     background-color: transparent;
     border: 1px solid $colorGris8;
     outline: none;
+    padding: 22.5px;
 }
 
 .boton {

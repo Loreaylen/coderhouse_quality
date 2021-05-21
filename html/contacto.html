@@ -51,10 +51,10 @@
     <a href="../index.html"> <img src="../img/vecteezy_headphone_1206742.png" alt="Logo" class="logo"></a>
    <h1 class="nombreEstudio">Quality sounds</h1> 
 </header> 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm  navbar-expand navbar-light bg-light">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse justify-content-lg-start justify-content-md-around justify-content-sm-center justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav flex-lg-row flex-md-row flex-sm-column flex-column" >
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
           </li>
@@ -102,7 +102,7 @@
 <main>
 <h1>Contacto</h1>
 
-<form action="#" method="GET">
+<form action="#" method="GET" id="form">
 
  
  
@@ -118,15 +118,6 @@
 <input type="text" name="" id="apellido" placeholder="Introduzca su apellido" required>
 </div>
 
-<div class="servicio">
-  <label for="servicio">Servicio</label>
-<br>
-<select id="servicio">
-    <option value="arreglo">Instrumentación</option>
-    <option value="usoEstudio">Grabación</option>
-    <option value="compra">Compra</option>
-</select>
-</div>
 
 <div class="formacion">
 <label for="formacion">Formación</label>
@@ -143,7 +134,15 @@
 
 </div>
 
-
+<div class="servicio">
+  <label for="servicio">Servicio</label>
+<br>
+<select id="servicio">
+    <option value="arreglo">Instrumentación</option>
+    <option value="usoEstudio">Grabación</option>
+    <option value="compra">Compra</option>
+</select>
+</div>
 
 <div class="mail">
 <label for="mail">Correo electrónico</label>
