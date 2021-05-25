@@ -395,6 +395,7 @@ form {
     padding:20px;
     margin: auto;
     max-width: 50%;
+    min-width: 40%;
     height:auto;   
     display: grid;
     grid-template-columns: 50% 50%;
@@ -425,7 +426,9 @@ form {
     
    
 
-
+    div {
+        width: 80%;
+    }
 
 
     legend {
@@ -454,7 +457,7 @@ form {
     
     font-family: 'Oswald', 'sans-serif';
     height: 40px;
-    width:350px;
+    width:100%;
     border:1px solid $colorGris8;
     background-color: transparent;
     outline: none;
@@ -489,14 +492,15 @@ select, option {
     font-size:15px ;
     font-family:'Share Tech Mono', monospace;
     height:40px;
-    width:360px;
+    width:100%;
     background-color: transparent;
     border:1px solid $colorGris8;
 }
 
 textarea {
     min-height: 200px;
-    min-width: 250px;
+    
+    max-width: 100%;
     background-color: transparent;
     border: 1px solid $colorGris8;
     outline: none;

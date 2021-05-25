@@ -41,7 +41,8 @@ footer {
                           "consulta"
                           "novedades"
                           "submit";
-    max-width:60%;
+    max-width:50%;
+    min-width:45% ;
     height: 1200px;
     row-gap:5px;
 }
@@ -263,7 +264,7 @@ footer {
                           "consulta"
                           "novedades"
                           "submit";
-    max-width:60%;
+    max-width:50%;
     height: 1200px;
     row-gap:5px;
 }
@@ -495,7 +496,8 @@ footer {
                           "consulta"
                           "novedades"
                           "submit";
-    max-width:90%;
+    max-width:50%;
+    min-width: 50%;
 
     height: 1200px;
     row-gap:5px;
@@ -1189,16 +1191,18 @@ footer {
     max-width:90%;
     height: 1350px;
     row-gap:5px;
+    padding:0;
 
 
+    div { display: flex; 
+        flex-flow: column nowrap; 
+    justify-content: center;
+   align-items: center;}
 
-    .radio {
-        display:flex;
-        flex-flow: column;
-    }
+
 
      input, select{
-        width: 250px;
+        max-width: 100%;
     }
 
     #consulta {

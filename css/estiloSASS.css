@@ -240,6 +240,7 @@ form {
   padding: 20px;
   margin: auto;
   max-width: 50%;
+  min-width: 40%;
   height: auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -266,6 +267,8 @@ form {
     grid-area: novedades; }
   form .submit {
     grid-area: submit; }
+  form div {
+    width: 80%; }
   form legend {
     padding: 20px;
     font-size: 26px;
@@ -282,7 +285,7 @@ form {
   form input {
     font-family: 'Oswald', 'sans-serif';
     height: 40px;
-    width: 350px;
+    width: 100%;
     border: 1px solid #8D99AE;
     background-color: transparent;
     outline: none; }
@@ -302,12 +305,12 @@ form {
     font-size: 15px;
     font-family: 'Share Tech Mono', monospace;
     height: 40px;
-    width: 360px;
+    width: 100%;
     background-color: transparent;
     border: 1px solid #8D99AE; }
   form textarea {
     min-height: 200px;
-    min-width: 250px;
+    max-width: 100%;
     background-color: transparent;
     border: 1px solid #8D99AE;
     outline: none;
@@ -365,7 +368,8 @@ form {
     grid-template-columns: 100%;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "nombre" "apellido" "servicio" "formacion" "mail" "consulta" "novedades" "submit";
-    max-width: 60%;
+    max-width: 50%;
+    min-width: 45%;
     height: 1200px;
     row-gap: 5px; }
   /*---------------------------------------------------------------
@@ -487,7 +491,7 @@ form {
     grid-template-columns: 100%;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "nombre" "apellido" "servicio" "formacion" "mail" "consulta" "novedades" "submit";
-    max-width: 60%;
+    max-width: 50%;
     height: 1200px;
     row-gap: 5px; }
   /*---------------------------------------------------------------
@@ -616,7 +620,8 @@ form {
     grid-template-columns: 100%;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "nombre" "apellido" "servicio" "formacion" "mail" "consulta" "novedades" "submit";
-    max-width: 90%;
+    max-width: 50%;
+    min-width: 50%;
     height: 1200px;
     row-gap: 5px; }
   /*---------------------------------------------------------------
@@ -991,12 +996,15 @@ form {
     grid-template-areas: "nombre" "apellido" "servicio" "formacion" "mail" "consulta" "novedades" "submit";
     max-width: 90%;
     height: 1350px;
-    row-gap: 5px; }
-    #form .radio {
+    row-gap: 5px;
+    padding: 0; }
+    #form div {
       display: flex;
-      flex-flow: column; }
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center; }
     #form input, #form select {
-      width: 250px; }
+      max-width: 100%; }
     #form #consulta {
       width: 250px;
       height: 200px; }
