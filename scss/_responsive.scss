@@ -244,7 +244,11 @@ footer {
 /*---------------------------------------------------------------
                              CONTACTO
 ---------------------------------------------------------------*/  
-
+#grillaContacto {
+    height: 2000px;
+    grid-template-rows: 21% 3% 71% 5%;
+   
+}
 
 
 #form {
@@ -473,7 +477,11 @@ footer {
                              CONTACTO
 ---------------------------------------------------------------*/  
 
-
+#grillaContacto {
+    height: 1900px;
+    grid-template-rows: 21% 3% 71% 5%;
+   
+}
 
 #form {
     grid-template-columns: 100%;
@@ -696,12 +704,10 @@ footer {
 ---------------------------------------------------------------*/  
 
 #grillaContacto {
-    height: 2000px;
-    grid-template-rows: 15% 1% 73% 3%;
-    
-    
+    height: 1900px;
+    grid-template-rows: 8% 10% 77% 5%;
+   
 }
-
 #form {
     grid-template-columns: 100%;
     grid-template-rows:repeat(8, 1fr);
@@ -932,7 +938,11 @@ footer {
 /*---------------------------------------------------------------
                              CONTACTO
 ---------------------------------------------------------------*/  
-
+#grillaContacto {
+    height: 1900px;
+    grid-template-rows: 8% 10% 77% 5%;
+   
+}
 
 
 #form {
@@ -951,11 +961,6 @@ footer {
     height: 1200px;
     row-gap:5px;
 }
-
-
-
-
-
 
 /*---------------------------------------------------------------
                            FIN CONTACTO
@@ -1162,6 +1167,11 @@ footer {
                              CONTACTO
 ---------------------------------------------------------------*/  
 
+#grillaContacto {
+    height: 1900px;
+    grid-template-rows: 8% 10% 77% 5%;
+   
+}
 
 
 #form {
@@ -1196,11 +1206,6 @@ footer {
         height:200px
     }
 }
-
-
-
-
-
 
 /*---------------------------------------------------------------
                            FIN CONTACTO
