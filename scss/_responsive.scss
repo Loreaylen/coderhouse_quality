@@ -1063,7 +1063,7 @@ footer {
 
 /*------- -------------MEDIA QUERY CELULAR S / M ----- ---------- ---------*/
 
-@media only screen  and (min-width:300px) and (max-width: 512px) {
+@media only screen  and (min-width:360px) and (max-width: 512px) {
 
 
    
@@ -1334,6 +1334,104 @@ footer {
 /*---------------------------------------------------------------
                            FIN CONTACTO
 ---------------------------------------------------------------*/ 
+
+
+}
+
+@media only screen  and (min-width:300px) and (max-width: 359px) {
+    /*HEADER*/
+header {
+    background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+     .logo {
+           display: none;
+           }    
+
+.nombreEstudio { 
+         font-size: 35px;     
+
+               } 
+   
+   
+        }
+
+/*FIN HEADER*/
+
+#grillaNosotros {
+    height: 2680px;
+    grid-template-rows: 8% 7.5% 81% 5%;
+
+    main { 
+        margin:0;
+        padding:20px;
+        box-sizing: border-box;
+       position: relative;
+
+     hr{
+         margin-bottom: 30px;
+     }
+      
+
+    .quienesSomos {
+        height:  auto;
+        margin:0;
+       font-size: $fontS;
+       row-gap: 0;
+        &__titulo{
+           background-color:white;
+            height:150px; 
+            position:absolute;
+       }
+    }
+    
+    .nuestrosServicios {
+        height: 450px;
+        position: relative; 
+
+    &__lista{
+        margin-bottom: 100px;
+    } 
+    }
+    
+
+    }
+}
+footer {
+  
+    width: 100%;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas: 
+                        "derechos"
+                        "redesSociales";
+    justify-items: center;
+    align-items: center;
+
+   p {
+    font-size:$fontS;
+    margin: 0;
+    padding:0;
+   }
+
+ 
+  .redesSociales {
+    padding: 0 ;
+    width: 100%;
+    justify-content: center;  
+
+    li { margin: 5px;}
+
+    &__img {
+    height:35px;
+    width:35px;
+    }
+  }
+
+  } 
 
 
 }

@@ -925,7 +925,7 @@ form {
 ---------------------------------------------------------------*/ }
 
 /*------- -------------MEDIA QUERY CELULAR S / M ----- ---------- ---------*/
-@media only screen and (min-width: 300px) and (max-width: 512px) {
+@media only screen and (min-width: 360px) and (max-width: 512px) {
   /*---------------------------------------------------------------
                              GENERAL
 ---------------------------------------------------------------*/
@@ -1078,3 +1078,61 @@ form {
   /*---------------------------------------------------------------
                            FIN CONTACTO
 ---------------------------------------------------------------*/ }
+
+@media only screen and (min-width: 300px) and (max-width: 359px) {
+  /*HEADER*/
+  header {
+    background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    header .logo {
+      display: none; }
+    header .nombreEstudio {
+      font-size: 35px; }
+  /*FIN HEADER*/
+  #grillaNosotros {
+    height: 2680px;
+    grid-template-rows: 8% 7.5% 81% 5%; }
+    #grillaNosotros main {
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative; }
+      #grillaNosotros main hr {
+        margin-bottom: 30px; }
+      #grillaNosotros main .quienesSomos {
+        height: auto;
+        margin: 0;
+        font-size: 16px;
+        row-gap: 0; }
+        #grillaNosotros main .quienesSomos__titulo {
+          background-color: white;
+          height: 150px;
+          position: absolute; }
+      #grillaNosotros main .nuestrosServicios {
+        height: 450px;
+        position: relative; }
+        #grillaNosotros main .nuestrosServicios__lista {
+          margin-bottom: 100px; }
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas: "derechos" "redesSociales";
+    justify-items: center;
+    align-items: center; }
+    footer p {
+      font-size: 16px;
+      margin: 0;
+      padding: 0; }
+    footer .redesSociales {
+      padding: 0;
+      width: 100%;
+      justify-content: center; }
+      footer .redesSociales li {
+        margin: 5px; }
+      footer .redesSociales__img {
+        height: 35px;
+        width: 35px; } }
