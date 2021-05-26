@@ -186,7 +186,7 @@
 /*________________PRODUCTOS___________________*/
 #grillaProductos {
   margin: 0;
-  height: 3350px;
+  height: 2800px;
   width: 100%;
   display: grid;
   grid-template-rows: 12.55% 1.79% 83.71% 1.95%;
@@ -195,11 +195,9 @@
 
 .carouselSintes, .carouselSintes #carouselExampleDark {
   max-width: 400px;
-  height: 400px;
+  max-height: 400px;
   margin: auto; }
   .carouselSintes .carousel-caption, .carouselSintes #carouselExampleDark .carousel-caption {
-    position: absolute;
-    top: 250px;
     margin: 0;
     padding: 0; }
 
@@ -763,7 +761,8 @@ form {
                           PRODUCTOS
 ---------------------------------------------------------------*/
   #grillaProductos {
-    grid-template-rows: 12.55% 5.79% 80.71% 1.95%; }
+    height: 2800px;
+    grid-template-rows: 10% 7% 83% 5%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
@@ -903,7 +902,21 @@ form {
                           PRODUCTOS
 ---------------------------------------------------------------*/
   #grillaProductos {
-    grid-template-rows: 12.55% 5.79% 80.71% 1.95%; }
+    height: 2350px;
+    grid-template-rows: 5% 10% 80% 5%; }
+    #grillaProductos .reviews {
+      margin: auto;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden; }
+      #grillaProductos .reviews iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
@@ -970,7 +983,7 @@ form {
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-    height: 2500px;
+    height: 2800px;
     grid-template-rows: 5% 9% 83% 3%; }
   #contenedorArticle {
     margin: 0;
@@ -1000,7 +1013,7 @@ form {
       padding: 15px;
       font-size: 16px; }
   .contenedorMedio {
-    height: 80%;
+    height: 100%;
     padding: 15px;
     display: flex;
     flex-flow: column nowrap;
@@ -1047,7 +1060,21 @@ form {
                           PRODUCTOS
 ---------------------------------------------------------------*/
   #grillaProductos {
-    grid-template-rows: 12.55% 5.79% 80.71% 1.95%; }
+    height: 2350px;
+    grid-template-rows: 5% 10% 80% 5%; }
+    #grillaProductos .reviews {
+      margin: auto;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden; }
+      #grillaProductos .reviews iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
@@ -1080,6 +1107,9 @@ form {
 ---------------------------------------------------------------*/ }
 
 @media only screen and (min-width: 300px) and (max-width: 359px) {
+  /*---------------------------------------------------------------
+                           GENERAL
+---------------------------------------------------------------*/
   /*HEADER*/
   header {
     background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
@@ -1091,6 +1121,94 @@ form {
     header .nombreEstudio {
       font-size: 35px; }
   /*FIN HEADER*/
+  /*FOOTER*/
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas: "derechos" "redesSociales";
+    justify-items: center;
+    align-items: center; }
+    footer p {
+      font-size: 16px;
+      margin: 0;
+      padding: 0; }
+    footer .redesSociales {
+      padding: 0;
+      width: 100%;
+      justify-content: center; }
+      footer .redesSociales li {
+        margin: 5px; }
+      footer .redesSociales__img {
+        height: 35px;
+        width: 35px; }
+  /*FIN FOOTER*/
+  /*---------------------------------------------------------------
+                           FIN GENERAL
+---------------------------------------------------------------*/
+  /*---------------------------------------------------------------
+                            INDEX
+---------------------------------------------------------------*/
+  #grillaIndex {
+    height: 2950px;
+    grid-template-rows: 5% 9% 83% 3%; }
+  #contenedorArticle {
+    margin: 0;
+    height: auto;
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 40.3%  32.3% 27.3%;
+    grid-template-columns: 100%;
+    grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
+  .contenedor {
+    height: 100%;
+    max-width: 100%;
+    margin-top: 45px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+    grid-area: textoIndex; }
+    .contenedor__img {
+      max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
+      height: auto;
+      padding: 0;
+      margin: 0; }
+    .contenedor__texto {
+      max-width: 100%;
+      height: auto;
+      padding: 15px;
+      font-size: 16px; }
+  .contenedorMedio {
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px; }
+    .contenedorMedio__titulo {
+      margin: 0; }
+    .contenedorMedio__texto {
+      height: 100%;
+      font-size: 16px; }
+  #seccionimg {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    grid-area: seccionImg;
+    height: 70%;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 20px; }
+    #seccionimg #carouselExampleControls {
+      max-width: 90%;
+      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
+  /*---------------------------------------------------------------
+                          FIN INDEX
+---------------------------------------------------------------*/
+  /*---------------------------------------------------------------
+                           NOSOTROS
+---------------------------------------------------------------*/
   #grillaNosotros {
     height: 2680px;
     grid-template-rows: 8% 7.5% 81% 5%; }
@@ -1115,24 +1233,28 @@ form {
         position: relative; }
         #grillaNosotros main .nuestrosServicios__lista {
           margin-bottom: 100px; }
-  footer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 45% 55%;
-    grid-template-areas: "derechos" "redesSociales";
-    justify-items: center;
-    align-items: center; }
-    footer p {
-      font-size: 16px;
-      margin: 0;
-      padding: 0; }
-    footer .redesSociales {
-      padding: 0;
-      width: 100%;
-      justify-content: center; }
-      footer .redesSociales li {
-        margin: 5px; }
-      footer .redesSociales__img {
-        height: 35px;
-        width: 35px; } }
+  /*---------------------------------------------------------------
+                           FIN NOSOTROS
+---------------------------------------------------------------*/
+  /*---------------------------------------------------------------
+                          PRODUCTOS
+---------------------------------------------------------------*/
+  #grillaProductos {
+    height: 2350px;
+    grid-template-rows: 5% 10% 80% 5%; }
+    #grillaProductos .reviews {
+      margin: auto;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden; }
+      #grillaProductos .reviews iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+  /*---------------------------------------------------------------
+                         FIN PRODUCTOS
+---------------------------------------------------------------*/ }
