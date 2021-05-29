@@ -24,7 +24,7 @@ $fontML: 18px;
 ---------------------------------------------------------------*/
 
   #grillaProductos {
-    grid-template-rows: 12.55% 2.5% 80.71% 1.95%;
+    grid-template-rows: 12.55% 2.5% 83% 1.95%;
   }
 
   /*---------------------------------------------------------------
@@ -433,7 +433,8 @@ $fontML: 18px;
 ---------------------------------------------------------------*/
 
   #grillaProductos {
-    grid-template-rows: 12.55% 2.5% 80.71% 1.95%;
+    height: 2600px;
+    grid-template-rows: 12.55% 2.5% 81% 3.95%;
   }
 
   /*---------------------------------------------------------------
@@ -923,6 +924,10 @@ $fontML: 18px;
         word-spacing: 0;
         line-height: 25px;
       }
+
+      &__volver {
+        font-size: $fontML;
+      }
     }
   }
 
@@ -1055,6 +1060,10 @@ $fontML: 18px;
       row-gap: 20px;
       grid-area: textoIndex;
 
+      &__titulo {
+        font-size: $fontML;
+      }
+
       &__img {
         @include maxAncho;
         height: auto;
@@ -1079,6 +1088,7 @@ $fontML: 18px;
 
       &__titulo {
         margin: 0;
+        font-size: $fontML;
       }
 
       &__texto {
@@ -1096,6 +1106,9 @@ $fontML: 18px;
       align-items: center;
       padding-bottom: 20px;
 
+      h2 {
+        font-size: $fontML;
+      }
       #carouselExampleControls {
         @include maxAncho;
       }
@@ -1110,8 +1123,8 @@ $fontML: 18px;
                            NOSOTROS
 ---------------------------------------------------------------*/
   #grillaNosotros {
-    height: 2400px;
-    grid-template-rows: 6.25% 10% 77% 5%;
+    height: 1900px;
+    grid-template-rows: 7.89% 13.16% 73.95% 5%;
 
     main {
       width: 100%;
@@ -1120,13 +1133,32 @@ $fontML: 18px;
       box-sizing: border-box;
 
       .quienesSomos {
-        height: 80%;
+        height: auto;
         grid-template-rows: 5% 95%;
+        margin: 0;
+        margin-top: 20px;
         font-size: $fontS;
+        row-gap: 0;
+
+        &__titulo {
+          font-size: $fontML;
+        }
+
+        &__contenido {
+          font-size: $fontS;
+        }
       }
 
       .nuestrosServicios {
-        height: 20%;
+        margin: auto;
+
+        &__titulo {
+          font-size: $fontML;
+        }
+
+        &__lista {
+          font-size: $fontS;
+        }
       }
     }
   }
@@ -1169,7 +1201,7 @@ $fontML: 18px;
 ---------------------------------------------------------------*/
   #grillaPreguntas {
     height: 3900px;
-    grid-template-rows: 3.85% 6.41% 86% 3%;
+    grid-template-rows: 3.85% 6.41% 86.74% 3%;
 
     .preguntas__lista {
       font-size: $fontML;
@@ -1184,6 +1216,10 @@ $fontML: 18px;
         font-size: $fontS;
         word-spacing: 0;
         line-height: 25px;
+      }
+
+      &__volver {
+        font-size: $fontML;
       }
     }
   }
@@ -1330,6 +1366,10 @@ $fontML: 18px;
       row-gap: 20px;
       grid-area: textoIndex;
 
+      &__titulo {
+        font-size: $fontML;
+      }
+
       &__img {
         @include maxAncho;
         height: auto;
@@ -1354,6 +1394,7 @@ $fontML: 18px;
 
       &__titulo {
         margin: 0;
+        font-size: $fontML;
       }
 
       &__texto {
@@ -1372,6 +1413,10 @@ $fontML: 18px;
       align-items: center;
       padding-bottom: 20px;
 
+      h2 {
+        font-size: $fontML;
+      }
+
       #carouselExampleControls {
         @include maxAncho;
       }
@@ -1387,8 +1432,8 @@ $fontML: 18px;
 ---------------------------------------------------------------*/
 
   #grillaNosotros {
-    height: 2550px;
-    grid-template-rows: 5.88% 11.11% 81% 5%;
+    height: 2350px;
+    grid-template-rows: 6.38% 10.64% 77.98% 5%;
 
     main {
       margin: 0;
@@ -1402,20 +1447,31 @@ $fontML: 18px;
 
       .quienesSomos {
         height: auto;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: 5% 95%;
         margin: 0;
+        margin-top: 20px;
         font-size: $fontS;
         row-gap: 0;
+
         &__titulo {
-          background-color: white;
-          height: 150px;
-          position: absolute;
+          font-size: $fontML;
+        }
+
+        &__contenido {
+          font-size: $fontS;
         }
       }
 
       .nuestrosServicios {
         margin: auto;
-        margin-top: 100px;
+
+        &__titulo {
+          font-size: $fontML;
+        }
+
+        &__lista {
+          font-size: $fontS;
+        }
       }
     }
   }
@@ -1474,6 +1530,11 @@ $fontML: 18px;
         word-spacing: 0;
         line-height: 25px;
       }
+
+      &__volver {
+        font-size: $fontML;
+        font-weight: lighter;
+      }
     }
   }
 
@@ -1487,7 +1548,7 @@ $fontML: 18px;
 
   #grillaContacto {
     height: 2200px;
-    grid-template-rows: 6.82% 11.36% 73.84% 5%;
+    grid-template-rows: 6.82% 11.36% 76.82% 5%;
 
     #form {
       grid-template-columns: 100%;

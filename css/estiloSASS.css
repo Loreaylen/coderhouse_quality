@@ -364,7 +364,7 @@ form {
                           PRODUCTOS
 ---------------------------------------------------------------*/
   #grillaProductos {
-    grid-template-rows: 12.55% 2.5% 80.71% 1.95%; }
+    grid-template-rows: 12.55% 2.5% 83% 1.95%; }
   /*---------------------------------------------------------------
                        FIN PRODUCTOS
 ---------------------------------------------------------------*/
@@ -633,7 +633,8 @@ form {
                           PRODUCTOS
 ---------------------------------------------------------------*/
   #grillaProductos {
-    grid-template-rows: 12.55% 2.5% 80.71% 1.95%; }
+    height: 2600px;
+    grid-template-rows: 12.55% 2.5% 81% 3.95%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
@@ -960,6 +961,8 @@ form {
       font-size: 16px;
       word-spacing: 0;
       line-height: 25px; }
+    #grillaPreguntas .respuestas__volver {
+      font-size: 18px; }
   /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
@@ -1044,6 +1047,8 @@ form {
       flex-flow: column nowrap;
       row-gap: 20px;
       grid-area: textoIndex; }
+      #grillaIndex .contenedor__titulo {
+        font-size: 18px; }
       #grillaIndex .contenedor__img {
         max-width: 90%;
         /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
@@ -1062,7 +1067,8 @@ form {
       flex-flow: column nowrap;
       row-gap: 20px; }
       #grillaIndex .contenedorMedio__titulo {
-        margin: 0; }
+        margin: 0;
+        font-size: 18px; }
       #grillaIndex .contenedorMedio__texto {
         height: 100%;
         font-size: 16px; }
@@ -1074,6 +1080,8 @@ form {
       justify-items: center;
       align-items: center;
       padding-bottom: 20px; }
+      #grillaIndex #seccionimg h2 {
+        font-size: 18px; }
       #grillaIndex #seccionimg #carouselExampleControls {
         max-width: 90%;
         /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
@@ -1084,19 +1092,30 @@ form {
                            NOSOTROS
 ---------------------------------------------------------------*/
   #grillaNosotros {
-    height: 2400px;
-    grid-template-rows: 6.25% 10% 77% 5%; }
+    height: 1900px;
+    grid-template-rows: 7.89% 13.16% 73.95% 5%; }
     #grillaNosotros main {
       width: 100%;
       margin: 0;
       padding: 20px;
       box-sizing: border-box; }
       #grillaNosotros main .quienesSomos {
-        height: 80%;
+        height: auto;
         grid-template-rows: 5% 95%;
-        font-size: 16px; }
+        margin: 0;
+        margin-top: 20px;
+        font-size: 16px;
+        row-gap: 0; }
+        #grillaNosotros main .quienesSomos__titulo {
+          font-size: 18px; }
+        #grillaNosotros main .quienesSomos__contenido {
+          font-size: 16px; }
       #grillaNosotros main .nuestrosServicios {
-        height: 20%; }
+        margin: auto; }
+        #grillaNosotros main .nuestrosServicios__titulo {
+          font-size: 18px; }
+        #grillaNosotros main .nuestrosServicios__lista {
+          font-size: 16px; }
   /*---------------------------------------------------------------
                           FIN NOSOTROS
 ---------------------------------------------------------------*/
@@ -1127,7 +1146,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaPreguntas {
     height: 3900px;
-    grid-template-rows: 3.85% 6.41% 86% 3%; }
+    grid-template-rows: 3.85% 6.41% 86.74% 3%; }
     #grillaPreguntas .preguntas__lista {
       font-size: 18px; }
     #grillaPreguntas .respuestas__titulo {
@@ -1136,6 +1155,8 @@ form {
       font-size: 16px;
       word-spacing: 0;
       line-height: 25px; }
+    #grillaPreguntas .respuestas__volver {
+      font-size: 18px; }
   /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
@@ -1231,6 +1252,8 @@ form {
       flex-flow: column nowrap;
       row-gap: 20px;
       grid-area: textoIndex; }
+      #grillaIndex .contenedor__titulo {
+        font-size: 18px; }
       #grillaIndex .contenedor__img {
         max-width: 90%;
         /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
@@ -1249,7 +1272,8 @@ form {
       flex-flow: column nowrap;
       row-gap: 20px; }
       #grillaIndex .contenedorMedio__titulo {
-        margin: 0; }
+        margin: 0;
+        font-size: 18px; }
       #grillaIndex .contenedorMedio__texto {
         height: 100%;
         font-size: 16px; }
@@ -1262,6 +1286,8 @@ form {
       justify-items: center;
       align-items: center;
       padding-bottom: 20px; }
+      #grillaIndex #seccionimg h2 {
+        font-size: 18px; }
       #grillaIndex #seccionimg #carouselExampleControls {
         max-width: 90%;
         /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
@@ -1272,8 +1298,8 @@ form {
                            NOSOTROS
 ---------------------------------------------------------------*/
   #grillaNosotros {
-    height: 2550px;
-    grid-template-rows: 5.88% 11.11% 81% 5%; }
+    height: 2350px;
+    grid-template-rows: 6.38% 10.64% 77.98% 5%; }
     #grillaNosotros main {
       margin: 0;
       padding: 20px;
@@ -1283,17 +1309,21 @@ form {
         margin-bottom: 30px; }
       #grillaNosotros main .quienesSomos {
         height: auto;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: 5% 95%;
         margin: 0;
+        margin-top: 20px;
         font-size: 16px;
         row-gap: 0; }
         #grillaNosotros main .quienesSomos__titulo {
-          background-color: white;
-          height: 150px;
-          position: absolute; }
+          font-size: 18px; }
+        #grillaNosotros main .quienesSomos__contenido {
+          font-size: 16px; }
       #grillaNosotros main .nuestrosServicios {
-        margin: auto;
-        margin-top: 100px; }
+        margin: auto; }
+        #grillaNosotros main .nuestrosServicios__titulo {
+          font-size: 18px; }
+        #grillaNosotros main .nuestrosServicios__lista {
+          font-size: 16px; }
   /*---------------------------------------------------------------
                            FIN NOSOTROS
 ---------------------------------------------------------------*/
@@ -1333,6 +1363,9 @@ form {
       font-size: 16px;
       word-spacing: 0;
       line-height: 25px; }
+    #grillaPreguntas .respuestas__volver {
+      font-size: 18px;
+      font-weight: lighter; }
   /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
@@ -1341,7 +1374,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaContacto {
     height: 2200px;
-    grid-template-rows: 6.82% 11.36% 73.84% 5%; }
+    grid-template-rows: 6.82% 11.36% 76.82% 5%; }
     #grillaContacto #form {
       grid-template-columns: 100%;
       grid-template-rows: repeat(8, 1fr);
