@@ -4,7 +4,7 @@
   height: 2500px;
   width: 100%;
   display: grid;
-  grid-template-rows: 14% 2% 82% 2%;
+  grid-template-rows: 14% 2.8% 82% 2%;
   grid-template-columns: 100%;
   grid-template-areas: "Header" "Nav" "Section" "Footer"; }
 
@@ -69,7 +69,7 @@
   height: 1500px;
   width: 100%;
   display: grid;
-  grid-template-rows: 28% 4% 64% 4%;
+  grid-template-rows: 28% 4.67% 64% 4%;
   grid-template-columns: 100%;
   grid-template-areas: "Header" "Nav" "Main" "Footer"; }
 
@@ -110,7 +110,7 @@
     font-size: 40px;
     font-family: "Share Tech Mono", monospace;
     margin: 0;
-    color: #D80032;
+    color: #d80032;
     font-size: 25px; }
   .nuestrosServicios__lista {
     color: #ba181b;
@@ -143,12 +143,12 @@
     margin-bottom: 50px;
     grid-area: listadoPreguntas; }
     .preguntas__lista:hover {
-      color: #8D99AE; }
+      color: #8d99ae; }
     .preguntas__lista:active {
       text-shadow: 1px 2px 2px #161a1d; }
   .preguntas__item a {
     text-decoration: none;
-    color: #E5383B; }
+    color: #e5383b; }
 
 .respuestas__contenido {
   margin: 20px; }
@@ -179,7 +179,7 @@
 
 .respuestas__titulo--sub {
   font-family: "Share Tech Mono", monospace;
-  color: #E5383B;
+  color: #e5383b;
   font-size: 18px; }
 
 /*---------FIN PREGUNTAS FRECUENTES--------------*/
@@ -189,7 +189,7 @@
   height: 2800px;
   width: 100%;
   display: grid;
-  grid-template-rows: 12.55% 1.79% 83.71% 1.95%;
+  grid-template-rows: 12.55% 2.5% 83.71% 1.95%;
   grid-template-columns: 100%;
   grid-template-areas: "Header" "Nav" "Section" "Footer"; }
 
@@ -271,20 +271,20 @@ form {
     padding: 20px;
     font-size: 26px;
     color: #ba181b;
-    font-family: 'Roboto Condensed', sans-serif; }
+    font-family: "Roboto Condensed", sans-serif; }
   form label {
-    color: #E5383B;
-    font-family: 'Oswald', 'sans-serif';
+    color: #e5383b;
+    font-family: "Oswald", "sans-serif";
     letter-spacing: 1px;
     font-weight: bolder;
     display: block;
     font-size: 20px;
     margin-bottom: 10px; }
   form input {
-    font-family: 'Oswald', 'sans-serif';
+    font-family: "Oswald", "sans-serif";
     height: 40px;
     width: 100%;
-    border: 1px solid #8D99AE;
+    border: 1px solid #8d99ae;
     background-color: transparent;
     outline: none; }
     form input:hover {
@@ -298,24 +298,25 @@ form {
     outline: none; }
     form select:hover {
       border: 1px solid #161a1d; }
-  form select, form option {
-    color: #8D99AE;
+  form select,
+  form option {
+    color: #8d99ae;
     font-size: 15px;
-    font-family: 'Share Tech Mono', monospace;
+    font-family: "Share Tech Mono", monospace;
     height: 40px;
     width: 100%;
     background-color: transparent;
-    border: 1px solid #8D99AE; }
+    border: 1px solid #8d99ae; }
   form textarea {
     min-height: 200px;
     max-width: 100%;
     background-color: transparent;
-    border: 1px solid #8D99AE;
+    border: 1px solid #8d99ae;
     outline: none;
     padding: 22.5px; }
   form .boton {
     color: #f3f4f5;
-    font-family: 'Oswald', 'sans-serif';
+    font-family: "Oswald", "sans-serif";
     font-weight: bolder;
     background-color: #ba181b;
     letter-spacing: 1px;
@@ -344,7 +345,7 @@ form {
     display: inline-block; }
   form .etiquetaDos {
     display: inline-block;
-    color: #8D99AE;
+    color: #8d99ae;
     font-size: 15px;
     margin: 10px;
     padding: 0; }
@@ -359,6 +360,14 @@ form {
     justify-content: space-evenly; }
     footer .redesSociales li {
       margin: 5px; }
+  /*---------------------------------------------------------------
+                          PRODUCTOS
+---------------------------------------------------------------*/
+  #grillaProductos {
+    grid-template-rows: 12.55% 2.5% 80.71% 1.95%; }
+  /*---------------------------------------------------------------
+                       FIN PRODUCTOS
+---------------------------------------------------------------*/
   /*---------------------------------------------------------------
                              CONTACTO
 ---------------------------------------------------------------*/
@@ -424,14 +433,14 @@ form {
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-    height: 2200px;
-    grid-template-rows: 6% 2.7% 89% 3%; }
+    height: 2600px;
+    grid-template-rows: 10.58% 2.7% 89% 3%; }
   #contenedorArticle {
     margin: 0;
     height: auto;
     display: grid;
     row-gap: 10px;
-    grid-template-rows: 40%  12.9% 3.9%;
+    grid-template-rows: 40% 12.9% 3.9%;
     grid-template-columns: 100%;
     grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
   .contenedor {
@@ -475,9 +484,9 @@ form {
                           PRODUCTOS
 ---------------------------------------------------------------*/
   #grillaProductos {
-    grid-template-rows: 12.55% 5.79% 80.71% 1.95%; }
+    grid-template-rows: 12.55% 2.5% 80.71% 1.95%; }
   /*---------------------------------------------------------------
-                         FIN PRODUCTOS
+                       FIN PRODUCTOS
 ---------------------------------------------------------------*/
   /*---------------------------------------------------------------
                              CONTACTO
@@ -497,7 +506,7 @@ form {
 ---------------------------------------------------------------*/ }
 
 /*------------------------MEDIA QUERY TABLET / LAPTOP------------------------- */
-@media only screen and (min-width: 901px) and (max-width: 1224px) {
+@media only screen and (min-width: 935px) and (max-width: 1224px) {
   /*---------------------------------------------------------------
                              GENERAL
 ---------------------------------------------------------------*/
@@ -546,13 +555,13 @@ form {
 ---------------------------------------------------------------*/
   #grillaIndex {
     height: 2500px;
-    grid-template-rows: 11% 2.33% 84% 3%; }
+    grid-template-rows: 11% 2.8% 84% 3%; }
   #contenedorArticle {
     margin: 0;
     height: auto;
     display: grid;
     row-gap: 10px;
-    grid-template-rows: 42%  20.9% 26.9%;
+    grid-template-rows: 42% 20.9% 26.9%;
     grid-template-columns: 100%;
     grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
   .contenedor {
@@ -572,7 +581,8 @@ form {
     .contenedor__texto {
       padding: 15px; }
   .contenedorMedio {
-    margin: 20px;
+    margin: 0;
+    padding: 20px;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -605,7 +615,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaNosotros {
     height: 1900px;
-    grid-template-rows: 21% 3% 71% 5%; }
+    grid-template-rows: 21% 3.68% 66% 7%; }
     #grillaNosotros main {
       width: 100%;
       margin: 0;
@@ -613,6 +623,9 @@ form {
       box-sizing: border-box; }
       #grillaNosotros main .quienesSomos {
         height: 600px; }
+      #grillaNosotros main .nuestrosServicios {
+        margin-top: 100px;
+        height: 400px; }
   /*---------------------------------------------------------------
                           FIN NOSOTROS
 ---------------------------------------------------------------*/
@@ -620,7 +633,7 @@ form {
                           PRODUCTOS
 ---------------------------------------------------------------*/
   #grillaProductos {
-    grid-template-rows: 12.55% 5.79% 80.71% 1.95%; }
+    grid-template-rows: 12.55% 2.5% 80.71% 1.95%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
@@ -643,7 +656,7 @@ form {
 ---------------------------------------------------------------*/ }
 
 /*---------------------MEDIA QUERY TABLET -----------------------*/
-@media only screen and (min-width: 650px) and (max-width: 900px) {
+@media only screen and (min-width: 650px) and (max-width: 934px) {
   /*---------------------------------------------------------------
                              GENERAL
 ---------------------------------------------------------------*/
@@ -689,13 +702,13 @@ form {
 ---------------------------------------------------------------*/
   #grillaIndex {
     height: 2500px;
-    grid-template-rows: 5% 9% 85% 3%; }
+    grid-template-rows: 6% 10% 85% 3%; }
   #contenedorArticle {
     margin: 0;
     height: auto;
     display: grid;
     row-gap: 10px;
-    grid-template-rows: 46%  22.9% 10.9%;
+    grid-template-rows: 46% 22.9% 10.9%;
     grid-template-columns: 100%;
     grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
   .contenedor {
@@ -746,14 +759,17 @@ form {
 ---------------------------------------------------------------*/
   #grillaNosotros {
     height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%; }
+    grid-template-rows: 10% 15% 68% 7%; }
     #grillaNosotros main {
       width: 100%;
       margin: 0;
       padding: 20px;
       box-sizing: border-box; }
       #grillaNosotros main .quienesSomos {
-        height: 800px; }
+        height: 750px; }
+      #grillaNosotros main .nuestrosServicios {
+        margin-top: 80px;
+        height: 400px; }
   /*---------------------------------------------------------------
                           FIN NOSOTROS
 ---------------------------------------------------------------*/
@@ -762,7 +778,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaProductos {
     height: 2800px;
-    grid-template-rows: 10% 7% 83% 5%; }
+    grid-template-rows: 10% 8.93% 83% 5%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
@@ -771,7 +787,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaPreguntas {
     height: 4000px;
-    grid-template-rows: 5% 7% 86% 3%; }
+    grid-template-rows: 5% 6.25% 86% 3%; }
   /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
@@ -780,7 +796,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaContacto {
     height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%; }
+    grid-template-rows: 8% 13.16% 77% 5%; }
   #form {
     grid-template-columns: 100%;
     grid-template-rows: repeat(8, 1fr);
@@ -838,56 +854,57 @@ form {
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-    height: 2300px;
-    grid-template-rows: 5% 9% 83% 3%; }
-  #contenedorArticle {
-    margin: 0;
-    height: 100%;
-    display: grid;
-    row-gap: 10px;
-    grid-template-rows: 45%  25.9%  28.7%;
-    grid-template-columns: 100%;
-    grid-template-areas: "textoIndex" "seccionMedia" "seccionImg";
-    justify-items: center; }
-  .contenedor {
-    height: 100%;
-    max-width: 95.5%;
-    margin-top: 15px;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 20px; }
-    .contenedor__img {
-      max-width: 90%;
-      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
-      height: auto;
-      padding: 0;
-      margin: 0; }
-    .contenedor__texto {
-      padding: 10px;
-      max-width: 100%;
-      height: auto;
-      font-size: 18px; }
-  .contenedorMedio {
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 20px;
-    padding: 20px; }
-    .contenedorMedio__titulo {
-      margin: 0; }
-    .contenedorMedio__texto {
+    height: 2600px;
+    grid-template-rows: 5.77% 9% 83% 3%; }
+    #grillaIndex #contenedorArticle {
+      margin: 0;
       height: 100%;
-      font-size: 18px; }
-  #seccionimg {
-    display: flex;
-    flex-flow: column nowrap;
-    grid-area: seccionImg;
-    height: 100%;
-    justify-items: center;
-    align-items: center; }
-    #seccionimg #carouselExampleControls {
-      max-width: 90%;
-      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
+      display: grid;
+      row-gap: 10px;
+      grid-template-rows: 40% 30% 30%;
+      grid-template-columns: 100%;
+      grid-template-areas: "textoIndex" "seccionMedia" "seccionImg";
+      justify-items: center; }
+    #grillaIndex .contenedor {
+      height: 100%;
+      max-width: 95.5%;
+      margin-top: 15px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px; }
+      #grillaIndex .contenedor__img {
+        max-width: 90%;
+        /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
+        height: auto;
+        padding: 0;
+        margin: 0; }
+      #grillaIndex .contenedor__texto {
+        padding: 10px;
+        max-width: 100%;
+        height: auto;
+        font-size: 18px; }
+    #grillaIndex .contenedorMedio {
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
+      padding: 20px; }
+      #grillaIndex .contenedorMedio__titulo {
+        margin: 0; }
+      #grillaIndex .contenedorMedio__texto {
+        height: 100%;
+        font-size: 18px; }
+    #grillaIndex #seccionimg {
+      padding-top: 20px;
+      display: flex;
+      flex-flow: column nowrap;
+      grid-area: seccionImg;
+      height: 100%;
+      justify-items: center;
+      align-items: center; }
+      #grillaIndex #seccionimg #carouselExampleControls {
+        max-width: 90%;
+        /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -895,8 +912,8 @@ form {
                            NOSOTROS
 ---------------------------------------------------------------*/
   #grillaNosotros {
-    height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%; }
+    height: 2200px;
+    grid-template-rows: 6.82% 11.36% 77% 5%; }
     #grillaNosotros main {
       width: 100%;
       margin: 0;
@@ -912,9 +929,9 @@ form {
 ---------------------------------------------------------------*/
   #grillaProductos {
     height: 2350px;
-    grid-template-rows: 5% 10% 80% 5%; }
+    grid-template-rows: 6.38% 10% 80% 5%; }
     #grillaProductos .reviews {
-      margin: auto;
+      display: flex;
       margin-bottom: 30px;
       position: relative;
       padding-bottom: 56.25%;
@@ -923,8 +940,8 @@ form {
       #grillaProductos .reviews iframe {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: 10;
+        width: 98%;
         height: 100%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
@@ -934,7 +951,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaPreguntas {
     height: 3400px;
-    grid-template-rows: 5% 7% 86% 3%; }
+    grid-template-rows: 4.41% 7% 85.59% 3%; }
     #grillaPreguntas .preguntas__lista {
       font-size: 18px; }
     #grillaPreguntas .respuestas__titulo {
@@ -951,7 +968,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaContacto {
     height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%; }
+    grid-template-rows: 7.89% 13.16% 73.95% 5%; }
   #form {
     grid-template-columns: 100%;
     grid-template-rows: repeat(8, 1fr);
@@ -1010,56 +1027,56 @@ form {
 ---------------------------------------------------------------*/
   #grillaIndex {
     height: 2800px;
-    grid-template-rows: 5% 9% 83% 3%; }
-  #contenedorArticle {
-    margin: 0;
-    height: auto;
-    display: grid;
-    row-gap: 10px;
-    grid-template-rows: 45.3%  28.3% 26.3%;
-    grid-template-columns: 100%;
-    grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
-  .contenedor {
-    height: 100%;
-    max-width: 100%;
-    margin-top: 45px;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 20px;
-    grid-area: textoIndex; }
-    .contenedor__img {
-      max-width: 90%;
-      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
+    grid-template-rows: 5.36% 9% 83% 3%; }
+    #grillaIndex #contenedorArticle {
+      margin: 0;
       height: auto;
-      padding: 0;
-      margin: 0; }
-    .contenedor__texto {
-      max-width: 100%;
-      height: auto;
-      padding: 15px;
-      font-size: 16px; }
-  .contenedorMedio {
-    height: 100%;
-    padding: 15px;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 20px; }
-    .contenedorMedio__titulo {
-      margin: 0; }
-    .contenedorMedio__texto {
+      display: grid;
+      row-gap: 10px;
+      grid-template-rows: 45.3% 31.3% 23.3%;
+      grid-template-columns: 100%;
+      grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
+    #grillaIndex .contenedor {
       height: 100%;
-      font-size: 16px; }
-  #seccionimg {
-    display: flex;
-    flex-flow: column nowrap;
-    grid-area: seccionImg;
-    min-height: 90%;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 20px; }
-    #seccionimg #carouselExampleControls {
-      max-width: 90%;
-      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
+      max-width: 100%;
+      margin-top: 45px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
+      grid-area: textoIndex; }
+      #grillaIndex .contenedor__img {
+        max-width: 90%;
+        /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
+        height: auto;
+        padding: 0;
+        margin: 0; }
+      #grillaIndex .contenedor__texto {
+        max-width: 100%;
+        height: auto;
+        padding: 15px;
+        font-size: 16px; }
+    #grillaIndex .contenedorMedio {
+      height: 100%;
+      padding: 15px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px; }
+      #grillaIndex .contenedorMedio__titulo {
+        margin: 0; }
+      #grillaIndex .contenedorMedio__texto {
+        height: 100%;
+        font-size: 16px; }
+    #grillaIndex #seccionimg {
+      display: flex;
+      flex-flow: column nowrap;
+      grid-area: seccionImg;
+      min-height: 90%;
+      justify-items: center;
+      align-items: center;
+      padding-bottom: 20px; }
+      #grillaIndex #seccionimg #carouselExampleControls {
+        max-width: 90%;
+        /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -1067,8 +1084,8 @@ form {
                            NOSOTROS
 ---------------------------------------------------------------*/
   #grillaNosotros {
-    height: 2650px;
-    grid-template-rows: 8% 10% 77% 5%; }
+    height: 2400px;
+    grid-template-rows: 6.25% 10% 77% 5%; }
     #grillaNosotros main {
       width: 100%;
       margin: 0;
@@ -1076,6 +1093,7 @@ form {
       box-sizing: border-box; }
       #grillaNosotros main .quienesSomos {
         height: 80%;
+        grid-template-rows: 5% 95%;
         font-size: 16px; }
       #grillaNosotros main .nuestrosServicios {
         height: 20%; }
@@ -1087,7 +1105,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaProductos {
     height: 2350px;
-    grid-template-rows: 5% 10% 80% 5%; }
+    grid-template-rows: 6.38% 10% 80% 5%; }
     #grillaProductos .reviews {
       margin: auto;
       margin-bottom: 30px;
@@ -1098,8 +1116,8 @@ form {
       #grillaProductos .reviews iframe {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: 10;
+        width: 98%;
         height: 100%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
@@ -1109,7 +1127,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaPreguntas {
     height: 3900px;
-    grid-template-rows: 5% 7% 86% 3%; }
+    grid-template-rows: 3.85% 6.41% 86% 3%; }
     #grillaPreguntas .preguntas__lista {
       font-size: 18px; }
     #grillaPreguntas .respuestas__titulo {
@@ -1125,8 +1143,8 @@ form {
                              CONTACTO
 ---------------------------------------------------------------*/
   #grillaContacto {
-    height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%; }
+    height: 2200px;
+    grid-template-rows: 6.82% 11.36% 76.82% 5%; }
   #form {
     grid-template-columns: 100%;
     grid-template-rows: repeat(8, 1fr);
@@ -1140,7 +1158,8 @@ form {
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center; }
-    #form input, #form select {
+    #form input,
+    #form select {
       max-width: 100%; }
     #form #consulta {
       width: 250px;
@@ -1195,57 +1214,57 @@ form {
 ---------------------------------------------------------------*/
   #grillaIndex {
     height: 2950px;
-    grid-template-rows: 5% 9% 83% 3%; }
-  #contenedorArticle {
-    margin: 0;
-    height: auto;
-    display: grid;
-    row-gap: 10px;
-    grid-template-rows: 40.3%  32.3% 27.3%;
-    grid-template-columns: 100%;
-    grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
-  .contenedor {
-    height: 100%;
-    max-width: 100%;
-    margin-top: 45px;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 20px;
-    grid-area: textoIndex; }
-    .contenedor__img {
-      max-width: 90%;
-      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
+    grid-template-rows: 5.08% 9% 83% 3%; }
+    #grillaIndex #contenedorArticle {
+      margin: 0;
       height: auto;
-      padding: 0;
-      margin: 0; }
-    .contenedor__texto {
-      max-width: 100%;
-      height: auto;
-      padding: 15px;
-      font-size: 16px; }
-  .contenedorMedio {
-    height: 100%;
-    padding: 15px;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 20px; }
-    .contenedorMedio__titulo {
-      margin: 0; }
-    .contenedorMedio__texto {
+      display: grid;
+      row-gap: 10px;
+      grid-template-rows: 40% 38% 22%;
+      grid-template-columns: 100%;
+      grid-template-areas: "textoIndex" "seccionMedia" "seccionImg"; }
+    #grillaIndex .contenedor {
       height: 100%;
-      font-size: 16px; }
-  #seccionimg {
-    margin-top: 20px;
-    display: flex;
-    flex-flow: column nowrap;
-    grid-area: seccionImg;
-    height: 70%;
-    justify-items: center;
-    align-items: center;
-    padding-bottom: 20px; }
-    #seccionimg #carouselExampleControls {
-      max-width: 90%;
-      /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
+      max-width: 100%;
+      margin-top: 45px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
+      grid-area: textoIndex; }
+      #grillaIndex .contenedor__img {
+        max-width: 90%;
+        /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
+        height: auto;
+        padding: 0;
+        margin: 0; }
+      #grillaIndex .contenedor__texto {
+        max-width: 100%;
+        height: auto;
+        padding: 15px;
+        font-size: 16px; }
+    #grillaIndex .contenedorMedio {
+      height: 100%;
+      padding: 15px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px; }
+      #grillaIndex .contenedorMedio__titulo {
+        margin: 0; }
+      #grillaIndex .contenedorMedio__texto {
+        height: 100%;
+        font-size: 16px; }
+    #grillaIndex #seccionimg {
+      margin-top: 20px;
+      display: flex;
+      flex-flow: column nowrap;
+      grid-area: seccionImg;
+      height: 70%;
+      justify-items: center;
+      align-items: center;
+      padding-bottom: 20px; }
+      #grillaIndex #seccionimg #carouselExampleControls {
+        max-width: 90%;
+        /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/ }
   /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
@@ -1253,8 +1272,8 @@ form {
                            NOSOTROS
 ---------------------------------------------------------------*/
   #grillaNosotros {
-    height: 2680px;
-    grid-template-rows: 8% 7.5% 81% 5%; }
+    height: 2550px;
+    grid-template-rows: 5.88% 11.11% 81% 5%; }
     #grillaNosotros main {
       margin: 0;
       padding: 20px;
@@ -1264,6 +1283,7 @@ form {
         margin-bottom: 30px; }
       #grillaNosotros main .quienesSomos {
         height: auto;
+        grid-template-rows: 10% 90%;
         margin: 0;
         font-size: 16px;
         row-gap: 0; }
@@ -1272,10 +1292,8 @@ form {
           height: 150px;
           position: absolute; }
       #grillaNosotros main .nuestrosServicios {
-        height: 450px;
-        position: relative; }
-        #grillaNosotros main .nuestrosServicios__lista {
-          margin-bottom: 100px; }
+        margin: auto;
+        margin-top: 100px; }
   /*---------------------------------------------------------------
                            FIN NOSOTROS
 ---------------------------------------------------------------*/
@@ -1284,7 +1302,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaProductos {
     height: 2350px;
-    grid-template-rows: 5% 10% 80% 5%; }
+    grid-template-rows: 6.38% 10% 80% 5%; }
     #grillaProductos .reviews {
       margin: auto;
       margin-bottom: 30px;
@@ -1295,8 +1313,8 @@ form {
       #grillaProductos .reviews iframe {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 100%;
+        left: 10;
+        width: 98%;
         height: 100%; }
   /*---------------------------------------------------------------
                          FIN PRODUCTOS
@@ -1306,15 +1324,43 @@ form {
 ---------------------------------------------------------------*/
   #grillaPreguntas {
     height: 4200px;
-    grid-template-rows: 5%  5% auto 3%; }
+    grid-template-rows: 3.57% 5.95% auto 3%; }
     #grillaPreguntas .preguntas__lista {
       font-size: 18px; }
-  .respuestas__titulo {
-    font-size: 18px; }
-  .respuestas__contenido {
-    font-size: 16px;
-    word-spacing: 0;
-    line-height: 25px; }
+    #grillaPreguntas .respuestas__titulo {
+      font-size: 18px; }
+    #grillaPreguntas .respuestas__contenido {
+      font-size: 16px;
+      word-spacing: 0;
+      line-height: 25px; }
   /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
+---------------------------------------------------------------*/
+  /*---------------------------------------------------------------
+                             CONTACTO
+---------------------------------------------------------------*/
+  #grillaContacto {
+    height: 2200px;
+    grid-template-rows: 6.82% 11.36% 73.84% 5%; }
+    #grillaContacto #form {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas: "nombre" "apellido" "servicio" "formacion" "mail" "consulta" "novedades" "submit";
+      max-width: 90%;
+      height: 1350px;
+      row-gap: 5px;
+      padding: 0; }
+      #grillaContacto #form div {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center; }
+      #grillaContacto #form input,
+      #grillaContacto #form select {
+        max-width: 100%; }
+      #grillaContacto #form #consulta {
+        width: 250px;
+        height: 200px; }
+  /*---------------------------------------------------------------
+                         FIN CONTACTO
 ---------------------------------------------------------------*/ }

@@ -1,1739 +1,1531 @@
 $gap: 10px;
- $fontS: 16px;
+$fontS: 16px;
 $fontML: 18px;
 
 @mixin maxAncho {
- max-width: 90%;
-     
+  max-width: 90%;
 
-/*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
-
+  /*------------------------MEDIA QUERY PANTALLA GRANDE----------------------*/
 }
 @media only screen and (min-width: 1541px) and (max-width: 1660px) {
-
-footer {
- 
-  .redesSociales {
-    padding: 0 20px 0 20px;
-    width: 20%;
-    justify-content: space-evenly;  
-    li { margin: 5px;}
-
+  footer {
+    .redesSociales {
+      padding: 0 20px 0 20px;
+      width: 20%;
+      justify-content: space-evenly;
+      li {
+        margin: 5px;
+      }
+    }
   }
 
-  } 
+  /*---------------------------------------------------------------
+                          PRODUCTOS
+---------------------------------------------------------------*/
 
+  #grillaProductos {
+    grid-template-rows: 12.55% 2.5% 80.71% 1.95%;
+  }
 
+  /*---------------------------------------------------------------
+                       FIN PRODUCTOS
+---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                              CONTACTO
----------------------------------------------------------------*/  
+---------------------------------------------------------------*/
 
-
-
-#form {
+  #form {
     grid-template-columns: 100%;
-    grid-template-rows:repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas:
-                         "nombre"
-                         "apellido"
-                         "servicio"
-                         "formacion"
-                          "mail"
-                          "consulta"
-                          "novedades"
-                          "submit";
-    max-width:50%;
-    min-width:45% ;
+      "nombre"
+      "apellido"
+      "servicio"
+      "formacion"
+      "mail"
+      "consulta"
+      "novedades"
+      "submit";
+    max-width: 50%;
+    min-width: 45%;
     height: 1200px;
-    row-gap:5px;
-}
+    row-gap: 5px;
+  }
 
-
-
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            FIN CONTACTO
----------------------------------------------------------------*/  
+---------------------------------------------------------------*/
 }
 
-/*--------------------------MEDIA QUERY LAPTOP -----------------------------------*/ 
+/*--------------------------MEDIA QUERY LAPTOP -----------------------------------*/
 
-@media only screen and   (min-width:1225px) and (max-width:1540px) {
-/*---------------------------------------------------------------
+@media only screen and (min-width: 1225px) and (max-width: 1540px) {
+  /*---------------------------------------------------------------
                              GENERAL
----------------------------------------------------------------*/   
+---------------------------------------------------------------*/
 
-
-/*HEADER*/
-header {
+  /*HEADER*/
+  header {
     background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
-   
-     .logo {
-        display: block;
-        position:absolute;
-        top:10px;
-        left:10px;
-           }    
 
-.nombreEstudio { 
-         font-size: 60px;     
+    .logo {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
 
-               } 
-   
-   
-        }
-
-/*FIN HEADER*/
-
-
-
-/*FOOTER*/
-
-footer {
-
-    width: 100%;
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 45% 55%;
-    grid-template-areas: 
-                        "derechos"
-                        "redesSociales";
-    justify-items: center;
-    align-items: center;
-    height:18.5vh;
-
-   p {
-    font-size:14px;
-    margin: 0;
-    padding:0;
-   }
-
- 
-  .redesSociales {
-    padding: 0 20px 0 20px;
-    width: 50%;
-    justify-content: space-evenly; 
-    
-
-    li { margin: 5px;}
-
-    &__img {
-    height:35px;
-    width:35px;
+    .nombreEstudio {
+      font-size: 60px;
     }
   }
 
-  } 
+  /*FIN HEADER*/
 
-/*FIN FOOTER*/
+  /*FOOTER*/
 
-/*---------------------------------------------------------------
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas:
+      "derechos"
+      "redesSociales";
+    justify-items: center;
+    align-items: center;
+    height: 18.5vh;
+
+    p {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .redesSociales {
+      padding: 0 20px 0 20px;
+      width: 50%;
+      justify-content: space-evenly;
+
+      li {
+        margin: 5px;
+      }
+
+      &__img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+
+  /*FIN FOOTER*/
+
+  /*---------------------------------------------------------------
                          FIN GENERAL
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-        height: 2200px;
-        grid-template-rows: 6% 2.7% 89% 3%;
-               } 
+    height: 2600px;
+    grid-template-rows: 10.58% 2.7% 89% 3%;
+  }
 
-#contenedorArticle { 
-        margin:0;
-        height: auto; 
-        display:grid;
-        row-gap: $gap;
-        grid-template-rows: 40%  12.9% 3.9%;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-                            "textoIndex"
-                            "seccionMedia"
-                            "seccionImg"
-                            
-                    }
+  #contenedorArticle {
+    margin: 0;
+    height: auto;
+    display: grid;
+    row-gap: $gap;
+    grid-template-rows: 40% 12.9% 3.9%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "textoIndex"
+      "seccionMedia"
+      "seccionImg";
+  }
 
-.contenedor {
-     height: 100%;
-     max-width: 100%;
-     display:flex;
-     flex-flow:column nowrap;
-     row-gap: 30px;
-    
+  .contenedor {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 30px;
 
     &__img {
-    
-    height: auto;
-    max-width: 90%;
-    padding:0;
-    margin:0;
-           } 
+      height: auto;
+      max-width: 90%;
+      padding: 0;
+      margin: 0;
+    }
 
+    &__texto {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 
-    &__texto { 
-     max-width: 100%;
-     height:auto;
-     
-             }
-
-             }   
-
-.contenedorMedio {
+  .contenedorMedio {
     height: 100%;
-    display:flex;
+    display: flex;
     flex-flow: column nowrap;
     row-gap: 20px;
     padding: 30px;
 
-
     &__titulo {
-    margin:0;
-}
-
+      margin: 0;
+    }
 
     &__texto {
-    height:100%;
+      height: 100%;
+    }
+  }
 
-}
-
-
-
-
-}
-
-
-#seccionimg{
+  #seccionimg {
     margin-top: 20px;
-    grid-template-columns:100%;
+    grid-template-columns: 100%;
     grid-template-rows: 6% 94%;
-    grid-template-areas: 
-                         "estudio"
-                        "carousel";
-    
+    grid-template-areas:
+      "estudio"
+      "carousel";
+
     grid-column-gap: 0;
     grid-area: seccionImg;
-    height:100%;
-    justify-items:center;
+    height: 100%;
+    justify-items: center;
     align-items: center;
- }
+  }
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
 
-
-
-
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           PRODUCTOS
 ---------------------------------------------------------------*/
 
-    #grillaProductos {
-    grid-template-rows: 12.55% 5.79% 80.71% 1.95%;
-}
+  #grillaProductos {
+    grid-template-rows: 12.55% 2.5% 80.71% 1.95%;
+  }
 
-/*---------------------------------------------------------------
-                         FIN PRODUCTOS
+  /*---------------------------------------------------------------
+                       FIN PRODUCTOS
 ---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                              CONTACTO
----------------------------------------------------------------*/  
-#grillaContacto {
+---------------------------------------------------------------*/
+  #grillaContacto {
     height: 2000px;
     grid-template-rows: 21% 3% 71% 5%;
-   
-}
+  }
 
-
-#form {
+  #form {
     grid-template-columns: 100%;
-    grid-template-rows:repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas:
-                         "nombre"
-                         "apellido"
-                         "servicio"
-                         "formacion"
-                          "mail"
-                          "consulta"
-                          "novedades"
-                          "submit";
-    max-width:50%;
+      "nombre"
+      "apellido"
+      "servicio"
+      "formacion"
+      "mail"
+      "consulta"
+      "novedades"
+      "submit";
+    max-width: 50%;
     height: 1200px;
-    row-gap:5px;
-}
+    row-gap: 5px;
+  }
 
-
-
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            FIN CONTACTO
----------------------------------------------------------------*/ 
-
-
-
-
+---------------------------------------------------------------*/
 }
-
-
 
 /*------------------------MEDIA QUERY TABLET / LAPTOP------------------------- */
-@media only screen and   (min-width:901px)and (max-width:1224px) {
-/*---------------------------------------------------------------
+@media only screen and (min-width: 935px) and (max-width: 1224px) {
+  /*---------------------------------------------------------------
                              GENERAL
----------------------------------------------------------------*/   
-           $padding15: 15px;
+---------------------------------------------------------------*/
+  $padding15: 15px;
 
-/*HEADER*/
-header {
+  /*HEADER*/
+  header {
     background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
-   
-     .logo {
-        display: block;
-        position:absolute;
-        top:10px;
-        left:10px;
-           }    
 
-.nombreEstudio { 
-         font-size: 60px;     
+    .logo {
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
 
-               } 
-   
-   
-        }
-
-/*FIN HEADER*/
-
-
-
-/*FOOTER*/
-
-footer {
-    width: 100%;
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 45% 55%;
-    grid-template-areas: 
-                        "derechos"
-                        "redesSociales";
-    justify-items: center;
-    align-items: center;
-
-   p {
-    font-size:14px;
-    margin: 0;
-    padding:0;
-   }
-
- 
-  .redesSociales {
-    padding: 0 20px 0 20px;
-    width: 50%;
-    justify-content: space-evenly; 
-
-    li { margin: 5px;}
-
-    &__img {
-    height:35px;
-    width:35px;
+    .nombreEstudio {
+      font-size: 60px;
     }
   }
 
-  } 
+  /*FIN HEADER*/
 
-/*FIN FOOTER*/
+  /*FOOTER*/
 
-/*---------------------------------------------------------------
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas:
+      "derechos"
+      "redesSociales";
+    justify-items: center;
+    align-items: center;
+
+    p {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .redesSociales {
+      padding: 0 20px 0 20px;
+      width: 50%;
+      justify-content: space-evenly;
+
+      li {
+        margin: 5px;
+      }
+
+      &__img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+
+  /*FIN FOOTER*/
+
+  /*---------------------------------------------------------------
                          FIN GENERAL
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-         height: 2500px;
-        grid-template-rows: 11% 2.33% 84% 3%;
-               } 
+    height: 2500px;
+    grid-template-rows: 11% 2.8% 84% 3%;
+  }
 
-#contenedorArticle { 
-        margin:0;
-        height: auto; 
-        display:grid;
-        row-gap: $gap;
-        grid-template-rows: 42%  20.9% 26.9%;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-                            "textoIndex"
-                            "seccionMedia"
-                            "seccionImg" 
-                            
-                    }
+  #contenedorArticle {
+    margin: 0;
+    height: auto;
+    display: grid;
+    row-gap: $gap;
+    grid-template-rows: 42% 20.9% 26.9%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "textoIndex"
+      "seccionMedia"
+      "seccionImg";
+  }
 
-.contenedor {
-     margin: 40px 0 40px 0;
-     height: 100%;
-     max-width: 100%;
-     display:flex;
-     flex-flow:column;
-     row-gap: 20px;
-     grid-area: textoIndex;
-    
+  .contenedor {
+    margin: 40px 0 40px 0;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    row-gap: 20px;
+    grid-area: textoIndex;
 
     &__img {
-    @include maxAncho;
-    height: auto;
-    padding:0;
-    margin:0;
-           } 
-
+      @include maxAncho;
+      height: auto;
+      padding: 0;
+      margin: 0;
+    }
 
     &__texto {
-    padding:$padding15; 
-     
-             }
+      padding: $padding15;
+    }
+  }
 
-             }   
-
-.contenedorMedio {
-    margin: 20px;
+  .contenedorMedio {
+    margin: 0;
+    padding: 20px;
     height: 100%;
-    display:flex;
-    flex-flow:column nowrap; 
+    display: flex;
+    flex-flow: column nowrap;
     row-gap: 20px;
     grid-area: seccionMedia;
 
-
     &__titulo {
-    margin:0;
-}
-
+      margin: 0;
+    }
 
     &__texto {
-    height:100%;
-    height:50%;
-    padding: $padding15;
-    text-align: center;
+      height: 100%;
+      height: 50%;
+      padding: $padding15;
+      text-align: center;
+    }
+  }
 
-}
-
-
-
-
-}
-
-
-#seccionimg{
-    margin-top:20px;
-    grid-template-columns:100%;
+  #seccionimg {
+    margin-top: 20px;
+    grid-template-columns: 100%;
     grid-template-rows: 10% 90%;
-    grid-template-areas: 
-                         "estudio"
-                        "carousel";
-    
+    grid-template-areas:
+      "estudio"
+      "carousel";
+
     grid-column-gap: 0;
     grid-area: seccionImg;
-    height:100%;
-    justify-items:center;
+    height: 100%;
+    justify-items: center;
     align-items: center;
 
     #carouselExampleControls {
-         max-width: 80%;
- }
-}
+      max-width: 80%;
+    }
+  }
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            NOSOTROS
 ---------------------------------------------------------------*/
-#grillaNosotros {
+  #grillaNosotros {
     height: 1900px;
-    grid-template-rows: 21% 3% 71% 5%;
+    grid-template-rows: 21% 3.68% 66% 7%;
 
     main {
-        width:100%;
-        margin:0;
-        padding:20px;
-        box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
 
-
-    .quienesSomos {
+      .quienesSomos {
         height: 600px;
+      }
+      .nuestrosServicios {
+        margin-top: 100px;
+        height: 400px;
+      }
     }
+  }
 
-
-    }
-}
-
-
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           FIN NOSOTROS
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           PRODUCTOS
 ---------------------------------------------------------------*/
 
-    #grillaProductos {
-    grid-template-rows: 12.55% 5.79% 80.71% 1.95%;
-}
+  #grillaProductos {
+    grid-template-rows: 12.55% 2.5% 80.71% 1.95%;
+  }
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                              CONTACTO
----------------------------------------------------------------*/  
+---------------------------------------------------------------*/
 
-#grillaContacto {
+  #grillaContacto {
     height: 1900px;
     grid-template-rows: 21% 3% 71% 5%;
-   
-}
+  }
 
-#form {
+  #form {
     grid-template-columns: 100%;
-    grid-template-rows:repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas:
-                         "nombre"
-                         "apellido"
-                         "servicio"
-                         "formacion"
-                          "mail"
-                          "consulta"
-                          "novedades"
-                          "submit";
-    max-width:50%;
+      "nombre"
+      "apellido"
+      "servicio"
+      "formacion"
+      "mail"
+      "consulta"
+      "novedades"
+      "submit";
+    max-width: 50%;
     min-width: 50%;
 
     height: 1200px;
-    row-gap:5px;
-}
+    row-gap: 5px;
+  }
 
-
-
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            FIN CONTACTO
----------------------------------------------------------------*/ 
-
-
-
-
+---------------------------------------------------------------*/
 }
-   
-
 
 /*---------------------MEDIA QUERY TABLET -----------------------*/
-@media only screen and   (min-width:650px)and (max-width:900px) {
+@media only screen and (min-width: 650px) and (max-width: 934px) {
+  $padding20: 20px;
 
-    $padding20: 20px;
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                              GENERAL
----------------------------------------------------------------*/   
+---------------------------------------------------------------*/
 
-
-/*HEADER*/
-header {
+  /*HEADER*/
+  header {
     background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
-   
-     .logo {
-           display: none;
-           }    
 
-.nombreEstudio { 
-         font-size: 35px;     
+    .logo {
+      display: none;
+    }
 
-               } 
-   
-   
-        }
-
-/*FIN HEADER*/
-
-
-
-/*FOOTER*/
-
-footer {
-    width: 100%;
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 45% 55%;
-    grid-template-areas: 
-                        "derechos"
-                        "redesSociales";
-    justify-items: center;
-    align-items: center;
-
-   p {
-    font-size:22px;
-    margin: 0;
-    padding:0;
-   }
-
- 
-  .redesSociales {
-    padding: 0 20px 0 20px;
-    width: 50%;
-    justify-content: space-evenly; 
-
-    li { margin: 5px;}
-
-    &__img {
-    height:35px;
-    width:35px;
+    .nombreEstudio {
+      font-size: 35px;
     }
   }
 
-  } 
+  /*FIN HEADER*/
 
-/*FIN FOOTER*/
+  /*FOOTER*/
 
-/*---------------------------------------------------------------
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas:
+      "derechos"
+      "redesSociales";
+    justify-items: center;
+    align-items: center;
+
+    p {
+      font-size: 22px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .redesSociales {
+      padding: 0 20px 0 20px;
+      width: 50%;
+      justify-content: space-evenly;
+
+      li {
+        margin: 5px;
+      }
+
+      &__img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+
+  /*FIN FOOTER*/
+
+  /*---------------------------------------------------------------
                          FIN GENERAL
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-        height: 2500px;
-        grid-template-rows: 5% 9% 85% 3%;
-               } 
+    height: 2500px;
+    grid-template-rows: 6% 10% 85% 3%;
+  }
 
-#contenedorArticle { 
-        margin:0;
-        height: auto; 
-        display:grid;
-        row-gap: $gap;
-        grid-template-rows: 46%  22.9% 10.9%;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-                            "textoIndex"
-                            "seccionMedia"
-                            "seccionImg" 
-                    }
-
-.contenedor {
-    margin-top:20px;
-    height: 100%; 
-    display:flex;
-    flex-flow: column nowrap;
-    row-gap:20px;
-    
-
-    &__img {
-    @include maxAncho;
+  #contenedorArticle {
+    margin: 0;
     height: auto;
-    padding:0;
-    margin:0;
-           } 
+    display: grid;
+    row-gap: $gap;
+    grid-template-rows: 46% 22.9% 10.9%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "textoIndex"
+      "seccionMedia"
+      "seccionImg";
+  }
 
-
-    &__texto {
-     padding:$padding20; 
-     max-width: 100%;
-     height:100%;
-     
-             }
-
-             }   
-
-.contenedorMedio {
+  .contenedor {
+    margin-top: 20px;
     height: 100%;
-    display:flex;
+    display: flex;
     flex-flow: column nowrap;
     row-gap: 20px;
 
-
-    &__titulo {
-    grid-area: grabaciones;
-    margin:0;
-}
-
+    &__img {
+      @include maxAncho;
+      height: auto;
+      padding: 0;
+      margin: 0;
+    }
 
     &__texto {
-    height:100%;
-    padding: $padding20;
+      padding: $padding20;
+      max-width: 100%;
+      height: 100%;
+    }
+  }
 
-}
+  .contenedorMedio {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
 
+    &__titulo {
+      grid-area: grabaciones;
+      margin: 0;
+    }
 
+    &__texto {
+      height: 100%;
+      padding: $padding20;
+    }
+  }
 
-
-}
-
-
-#seccionimg{
+  #seccionimg {
     margin-top: 20px;
-    grid-template-columns:100%;
+    grid-template-columns: 100%;
     grid-template-rows: 6% 94%;
-    grid-template-areas: 
-                         "estudio"
-                        "carousel";
-    
+    grid-template-areas:
+      "estudio"
+      "carousel";
+
     grid-column-gap: 0;
     grid-area: seccionImg;
-    height:100%;
-    justify-items:center;
+    height: 100%;
+    justify-items: center;
     align-items: center;
 
-     #carouselExampleControls {
-         @include maxAncho;
-     }
- }
+    #carouselExampleControls {
+      @include maxAncho;
+    }
+  }
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            NOSOTROS
 ---------------------------------------------------------------*/
-#grillaNosotros {
+
+  #grillaNosotros {
     height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%;;
+    grid-template-rows: 10% 15% 68% 7%;
 
     main {
-        width:100%;
-        margin:0;
-        padding:20px;
-        box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
 
-
-    .quienesSomos {
-        height: 800px;
+      .quienesSomos {
+        height: 750px;
+      }
+      .nuestrosServicios {
+        margin-top: 80px;
+        height: 400px;
+      }
     }
-
-
-    }
-}
-
-
-/*---------------------------------------------------------------
+  }
+  /*---------------------------------------------------------------
                           FIN NOSOTROS
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           PRODUCTOS
 ---------------------------------------------------------------*/
 
-    #grillaProductos {
+  #grillaProductos {
     height: 2800px;
-    grid-template-rows: 10% 7% 83% 5%;
-}
+    grid-template-rows: 10% 8.93% 83% 5%;
+  }
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                       PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
-#grillaPreguntas {
+  #grillaPreguntas {
     height: 4000px;
-    grid-template-rows: 5% 7% 86% 3%;
-    
-}
+    grid-template-rows: 5% 6.25% 86% 3%;
+  }
 
-
-
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
 
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                              CONTACTO
----------------------------------------------------------------*/  
+---------------------------------------------------------------*/
 
-#grillaContacto {
+  #grillaContacto {
     height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%;
-   
-}
-#form {
+    grid-template-rows: 8% 13.16% 77% 5%;
+  }
+  #form {
     grid-template-columns: 100%;
-    grid-template-rows:repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas:
-                         "nombre"
-                         "apellido"
-                         "servicio"
-                         "formacion"
-                          "mail"
-                          "consulta"
-                          "novedades"
-                          "submit";
-    max-width:86%;
+      "nombre"
+      "apellido"
+      "servicio"
+      "formacion"
+      "mail"
+      "consulta"
+      "novedades"
+      "submit";
+    max-width: 86%;
     height: 1200px;
-    row-gap:5px;
-}
+    row-gap: 5px;
+  }
 
-
-
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            FIN CONTACTO
----------------------------------------------------------------*/ 
-
-
+---------------------------------------------------------------*/
 }
-    
-
-
-
 
 /*---------- MEDIA QUERY  MOBILE L / KINDLE  de 401 a 635 --------------*/
 
- @media only screen  and (min-width:513px) and (max-width: 649px) {
-      
-    
-
-/*---------------------------------------------------------------
+@media only screen and (min-width: 513px) and (max-width: 649px) {
+  /*---------------------------------------------------------------
                              GENERAL
----------------------------------------------------------------*/   
+---------------------------------------------------------------*/
 
-
-/*HEADER*/
-header {
+  /*HEADER*/
+  header {
     background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
-   
-     .logo {
-           display: none;
-           }    
 
-.nombreEstudio { 
-         font-size: 35px;     
+    .logo {
+      display: none;
+    }
 
-               } 
-   
-   
-        }
-
-/*FIN HEADER*/
-
-
-
-/*FOOTER*/
-
-footer {
-    width: 100%;
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 45% 55%;
-    grid-template-areas: 
-                        "derechos"
-                        "redesSociales";
-    justify-items: center;
-    align-items: center;
-
-   p {
-    font-size:22px;
-    margin: 0;
-    padding:0;
-   }
-
- 
-  .redesSociales {
-    padding: 0 ;
-    width: 100%;
-    justify-content: center;  
-
-    li { margin: 5px;}
-
-    &__img {
-    height:35px;
-    width:35px;
+    .nombreEstudio {
+      font-size: 35px;
     }
   }
 
-  } 
+  /*FIN HEADER*/
 
-/*FIN FOOTER*/
+  /*FOOTER*/
 
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas:
+      "derechos"
+      "redesSociales";
+    justify-items: center;
+    align-items: center;
 
+    p {
+      font-size: 22px;
+      margin: 0;
+      padding: 0;
+    }
 
-/*---------------------------------------------------------------
+    .redesSociales {
+      padding: 0;
+      width: 100%;
+      justify-content: center;
+
+      li {
+        margin: 5px;
+      }
+
+      &__img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+
+  /*FIN FOOTER*/
+
+  /*---------------------------------------------------------------
                          FIN GENERAL
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                             INDEX
 ---------------------------------------------------------------*/
   #grillaIndex {
-        height: 2300px;
-        grid-template-rows: 5% 9% 83% 3%;
-               }  
+    height: 2600px;
+    grid-template-rows: 5.77% 9% 83% 3%;
 
-#contenedorArticle { 
-        margin:0;
-        height: 100%; 
-        display:grid;
-        row-gap: $gap;
-        grid-template-rows: 45%  25.9%  28.7%;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-                            "textoIndex"
-                            "seccionMedia"
-                            "seccionImg";
-        justify-items: center;                    
-                    
-
-} 
-
-
-.contenedor {
-    height: 100%;
-    max-width: 95.5%;
-    margin-top:15px;
-    display:flex; 
-    flex-flow: column nowrap;
-    row-gap: 20px;
-  
-                         
-    
-
-    &__img {
-    @include maxAncho;
-    height: auto;
-    padding:0;
-    margin:0;
-           } 
-
-
-    &__texto {
-     padding:10px; 
-     max-width: 100%;
-     height:auto;
-     font-size: $fontML;
-     
-             }
-
-             }   
-
-
-
-.contenedorMedio {
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 20px;
-    padding: 20px;
-
-   
-    &__titulo {
-    margin:0;
-}
-
-
-    &__texto {
-    height:100%;
-    font-size: $fontML;
-
-}
-
-
-
-
-}
-
-
-#seccionimg{
-    display:flex;
-    flex-flow: column nowrap;
-    grid-area: seccionImg;
-    height:100%;
-    justify-items:center;
-    align-items: center;
-
-   #carouselExampleControls {
-        @include maxAncho;
+    #contenedorArticle {
+      margin: 0;
+      height: 100%;
+      display: grid;
+      row-gap: $gap;
+      grid-template-rows: 40% 30% 30%;
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "textoIndex"
+        "seccionMedia"
+        "seccionImg";
+      justify-items: center;
     }
 
- }
+    .contenedor {
+      height: 100%;
+      max-width: 95.5%;
+      margin-top: 15px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
 
+      &__img {
+        @include maxAncho;
+        height: auto;
+        padding: 0;
+        margin: 0;
+      }
 
+      &__texto {
+        padding: 10px;
+        max-width: 100%;
+        height: auto;
+        font-size: $fontML;
+      }
+    }
 
-/*---------------------------------------------------------------
+    .contenedorMedio {
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
+      padding: 20px;
+
+      &__titulo {
+        margin: 0;
+      }
+
+      &__texto {
+        height: 100%;
+        font-size: $fontML;
+      }
+    }
+
+    #seccionimg {
+      padding-top: 20px;
+      display: flex;
+      flex-flow: column nowrap;
+      grid-area: seccionImg;
+      height: 100%;
+      justify-items: center;
+      align-items: center;
+
+      #carouselExampleControls {
+        @include maxAncho;
+      }
+    }
+  }
+
+  /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            NOSOTROS
 ---------------------------------------------------------------*/
-#grillaNosotros {
-    height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%;;
+  #grillaNosotros {
+    height: 2200px;
+    grid-template-rows: 6.82% 11.36% 77% 5%;
 
     main {
-        width:100%;
-        margin:0;
-        padding:20px;
-        box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
 
-
-    .quienesSomos {
+      .quienesSomos {
         height: 1050px;
+      }
     }
+  }
 
-
-    }
-}
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           FIN NOSOTROS
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           PRODUCTOS
 ---------------------------------------------------------------*/
 
-    #grillaProductos {
-    height: 2350px;    
-    grid-template-rows: 5% 10% 80% 5%;
+  #grillaProductos {
+    height: 2350px;
+    grid-template-rows: 6.38% 10% 80% 5%;
 
+    .reviews {
+      display: flex;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
 
-.reviews {
-    margin:auto;
-    margin-bottom:30px;
-    position:relative;
-    padding-bottom: 56.25%;
-    height:0;
-    overflow: hidden;
-
-    iframe {
-        position:absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height:100%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 10;
+        width: 98%;
+        height: 100%;
+      }
     }
-}
+  }
 
-
-}
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                       PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
-#grillaPreguntas {
+  #grillaPreguntas {
     height: 3400px;
-    grid-template-rows: 5% 7% 86% 3%;
-    
-    .preguntas__lista {
-        font-size:$fontML;
+    grid-template-rows: 4.41% 7% 85.59% 3%;
 
+    .preguntas__lista {
+      font-size: $fontML;
     }
 
-     .respuestas {
-        &__titulo {
-            font-size: $fontML;
-        }
+    .respuestas {
+      &__titulo {
+        font-size: $fontML;
+      }
 
-        &__contenido {
-        font-size:$fontS;
+      &__contenido {
+        font-size: $fontS;
         word-spacing: 0;
         line-height: 25px;
-        }
+      }
     }
-}
+  }
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                              CONTACTO
----------------------------------------------------------------*/  
-#grillaContacto {
+---------------------------------------------------------------*/
+  #grillaContacto {
     height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%;
-   
-}
+    grid-template-rows: 7.89% 13.16% 73.95% 5%;
+  }
 
-
-#form {
+  #form {
     grid-template-columns: 100%;
-    grid-template-rows:repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas:
-                         "nombre"
-                         "apellido"
-                         "servicio"
-                         "formacion"
-                          "mail"
-                          "consulta"
-                          "novedades"
-                          "submit";
-    max-width:87%;
+      "nombre"
+      "apellido"
+      "servicio"
+      "formacion"
+      "mail"
+      "consulta"
+      "novedades"
+      "submit";
+    max-width: 87%;
     height: 1200px;
-    row-gap:5px;
-}
+    row-gap: 5px;
+  }
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            FIN CONTACTO
----------------------------------------------------------------*/ 
-
+---------------------------------------------------------------*/
 }
-
-
-
 
 /*------- -------------MEDIA QUERY CELULAR S / M ----- ---------- ---------*/
 
-@media only screen  and (min-width:360px) and (max-width: 512px) {
-
-
-   
-
-/*---------------------------------------------------------------
+@media only screen and (min-width: 360px) and (max-width: 512px) {
+  /*---------------------------------------------------------------
                              GENERAL
----------------------------------------------------------------*/   
+---------------------------------------------------------------*/
 
-
-/*HEADER*/
-header {
+  /*HEADER*/
+  header {
     background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
-   
-     .logo {
-           display: none;
-           }    
 
-.nombreEstudio { 
-         font-size: 35px;     
+    .logo {
+      display: none;
+    }
 
-               } 
-   
-   
-        }
-
-/*FIN HEADER*/
-
-
-
-/*FOOTER*/
-
-footer {
-  
-    width: 100%;
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 45% 55%;
-    grid-template-areas: 
-                        "derechos"
-                        "redesSociales";
-    justify-items: center;
-    align-items: center;
-
-   p {
-    font-size:$fontS;
-    margin: 0;
-    padding:0;
-   }
-
- 
-  .redesSociales {
-    padding: 0 ;
-    width: 100%;
-    justify-content: center;  
-
-    li { margin: 5px;}
-
-    &__img {
-    height:35px;
-    width:35px;
+    .nombreEstudio {
+      font-size: 35px;
     }
   }
 
-  } 
+  /*FIN HEADER*/
 
+  /*FOOTER*/
 
-/*FIN FOOTER*/
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas:
+      "derechos"
+      "redesSociales";
+    justify-items: center;
+    align-items: center;
 
-/*---------------------------------------------------------------
+    p {
+      font-size: $fontS;
+      margin: 0;
+      padding: 0;
+    }
+
+    .redesSociales {
+      padding: 0;
+      width: 100%;
+      justify-content: center;
+
+      li {
+        margin: 5px;
+      }
+
+      &__img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+
+  /*FIN FOOTER*/
+
+  /*---------------------------------------------------------------
                          FIN GENERAL
 ---------------------------------------------------------------*/
 
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                             INDEX
 ---------------------------------------------------------------*/
-#grillaIndex {
-        height: 2800px;
-        grid-template-rows: 5% 9% 83% 3%;
-               } 
+  #grillaIndex {
+    height: 2800px;
+    grid-template-rows: 5.36% 9% 83% 3%;
 
-#contenedorArticle { 
-        margin:0;
-        height: auto; 
-        display:grid;
-        row-gap:$gap;
-        grid-template-rows: 45.3%  28.3% 26.3%;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-                            "textoIndex"
-                            "seccionMedia"
-                            "seccionImg" ;
-                    }
+    #contenedorArticle {
+      margin: 0;
+      height: auto;
+      display: grid;
+      row-gap: $gap;
+      grid-template-rows: 45.3% 31.3% 23.3%;
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "textoIndex"
+        "seccionMedia"
+        "seccionImg";
+    }
 
-.contenedor {
-    height: 100%;
-    max-width: 100%;
-    margin-top:45px;
-    display:flex; 
-    flex-flow: column nowrap;
-    row-gap: 20px;
-    grid-area: textoIndex;
-    
-  
+    .contenedor {
+      height: 100%;
+      max-width: 100%;
+      margin-top: 45px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
+      grid-area: textoIndex;
 
-    &__img {
-    @include maxAncho;
-    height:auto;
-    padding:0;
-    margin:0;
-           } 
+      &__img {
+        @include maxAncho;
+        height: auto;
+        padding: 0;
+        margin: 0;
+      }
 
+      &__texto {
+        max-width: 100%;
+        height: auto;
+        padding: 15px;
+        font-size: $fontS;
+      }
+    }
 
-    &__texto {
-     max-width: 100%;
-     height:auto;
-     padding:15px;
-     font-size: $fontS;
-     
-             }
+    .contenedorMedio {
+      height: 100%;
+      padding: 15px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
 
-             }   
+      &__titulo {
+        margin: 0;
+      }
 
-.contenedorMedio {
-    height: 100%;
-    padding:15px;
-    display:flex;
-    flex-flow: column nowrap;
-    row-gap: 20px;
+      &__texto {
+        height: 100%;
+        font-size: $fontS;
+      }
+    }
 
+    #seccionimg {
+      display: flex;
+      flex-flow: column nowrap;
+      grid-area: seccionImg;
+      min-height: 90%;
+      justify-items: center;
+      align-items: center;
+      padding-bottom: 20px;
 
+      #carouselExampleControls {
+        @include maxAncho;
+      }
+    }
+  }
 
-    &__titulo {
-    margin:0;
-}
-
-
-    &__texto {
-    height:100%;
-    font-size: $fontS;
-
-}
-
-
-
-
-}
-
-#seccionimg{
-    display:flex;
-    flex-flow: column nowrap;
-    grid-area: seccionImg;
-    min-height:90%;
-    justify-items:center;
-    align-items: center;
-    padding-bottom: 20px;
-
-    #carouselExampleControls {
-         @include maxAncho;
-     }
-
-
- }
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            NOSOTROS
 ---------------------------------------------------------------*/
-#grillaNosotros {
-    height: 2650px;
-    grid-template-rows: 8% 10% 77% 5%;;
+  #grillaNosotros {
+    height: 2400px;
+    grid-template-rows: 6.25% 10% 77% 5%;
 
     main {
-        width:100%;
-        margin:0;
-        padding:20px;
-        box-sizing: border-box;
+      width: 100%;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
 
-
-    
-
-    .quienesSomos {
+      .quienesSomos {
         height: 80%;
-       font-size: $fontS;
-    }
-    
-    .nuestrosServicios {
+        grid-template-rows: 5% 95%;
+        font-size: $fontS;
+      }
+
+      .nuestrosServicios {
         height: 20%;
+      }
     }
+  }
 
-    }
-}
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           FIN NOSOTROS
 ---------------------------------------------------------------*/
 
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           PRODUCTOS
 ---------------------------------------------------------------*/
 
-    #grillaProductos {
-    height: 2350px;    
-    grid-template-rows: 5% 10% 80% 5%;
+  #grillaProductos {
+    height: 2350px;
+    grid-template-rows: 6.38% 10% 80% 5%;
 
+    .reviews {
+      margin: auto;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
 
-.reviews {
-    margin:auto;
-    margin-bottom:30px;
-    position:relative;
-    padding-bottom: 56.25%;
-    height:0;
-    overflow: hidden;
-
-    iframe {
-        position:absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height:100%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 10;
+        width: 98%;
+        height: 100%;
+      }
     }
-}
+  }
 
-
-}
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                       PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
-#grillaPreguntas {
+  #grillaPreguntas {
     height: 3900px;
-    grid-template-rows: 5% 7% 86% 3%;
+    grid-template-rows: 3.85% 6.41% 86% 3%;
 
     .preguntas__lista {
-        font-size:$fontML;
+      font-size: $fontML;
     }
 
-     .respuestas {
-        &__titulo {
-            font-size: $fontML;
-        }
+    .respuestas {
+      &__titulo {
+        font-size: $fontML;
+      }
 
-        &__contenido {
-        font-size:$fontS;
+      &__contenido {
+        font-size: $fontS;
         word-spacing: 0;
         line-height: 25px;
-        }
+      }
     }
-}
+  }
 
-
-   
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                              CONTACTO
----------------------------------------------------------------*/  
+---------------------------------------------------------------*/
 
-#grillaContacto {
-    height: 1900px;
-    grid-template-rows: 8% 10% 77% 5%;
-   
-}
+  #grillaContacto {
+    height: 2200px;
+    grid-template-rows: 6.82% 11.36% 76.82% 5%;
+  }
 
-
-#form {
+  #form {
     grid-template-columns: 100%;
-    grid-template-rows:repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas:
-                         "nombre"
-                         "apellido"
-                         "servicio"
-                         "formacion"
-                          "mail"
-                          "consulta"
-                          "novedades"
-                          "submit";
-    max-width:90%;
+      "nombre"
+      "apellido"
+      "servicio"
+      "formacion"
+      "mail"
+      "consulta"
+      "novedades"
+      "submit";
+    max-width: 90%;
     height: 1350px;
-    row-gap:5px;
-    padding:0;
+    row-gap: 5px;
+    padding: 0;
 
+    div {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
 
-    div { display: flex; 
-        flex-flow: column nowrap; 
-    justify-content: center;
-   align-items: center;}
-
-
-
-     input, select{
-        max-width: 100%;
+    input,
+    select {
+      max-width: 100%;
     }
 
     #consulta {
-        width: 250px;
-        height:200px
+      width: 250px;
+      height: 200px;
     }
-}
+  }
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            FIN CONTACTO
----------------------------------------------------------------*/ 
-
-
+---------------------------------------------------------------*/
 }
 
-
-@media only screen  and (min-width:300px) and (max-width: 359px) {
-
-/*---------------------------------------------------------------
+@media only screen and (min-width: 300px) and (max-width: 359px) {
+  /*---------------------------------------------------------------
                            GENERAL
 ---------------------------------------------------------------*/
 
-
-    /*HEADER*/
-header {
+  /*HEADER*/
+  header {
     background-image: url(../img/rsz_22_adi-goldstein-sdtnz4lgbwk-unsplash.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
-   
-     .logo {
-           display: none;
-           }    
 
-.nombreEstudio { 
-         font-size: 35px;     
+    .logo {
+      display: none;
+    }
 
-               } 
-   
-   
-        }
-
-        /*FIN HEADER*/
-        /*FOOTER*/
-footer {
-  
-    width: 100%;
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 45% 55%;
-    grid-template-areas: 
-                        "derechos"
-                        "redesSociales";
-    justify-items: center;
-    align-items: center;
-
-   p {
-    font-size:$fontS;
-    margin: 0;
-    padding:0;
-   }
-
- 
-  .redesSociales {
-    padding: 0 ;
-    width: 100%;
-    justify-content: center;  
-
-    li { margin: 5px;}
-
-    &__img {
-    height:35px;
-    width:35px;
+    .nombreEstudio {
+      font-size: 35px;
     }
   }
 
-  } 
-       /*FIN FOOTER*/
+  /*FIN HEADER*/
+  /*FOOTER*/
+  footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    grid-template-areas:
+      "derechos"
+      "redesSociales";
+    justify-items: center;
+    align-items: center;
 
-/*---------------------------------------------------------------
+    p {
+      font-size: $fontS;
+      margin: 0;
+      padding: 0;
+    }
+
+    .redesSociales {
+      padding: 0;
+      width: 100%;
+      justify-content: center;
+
+      li {
+        margin: 5px;
+      }
+
+      &__img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+  }
+  /*FIN FOOTER*/
+
+  /*---------------------------------------------------------------
                            FIN GENERAL
 ---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                             INDEX
 ---------------------------------------------------------------*/
-#grillaIndex {
-        height: 2950px;
-        grid-template-rows: 5% 9% 83% 3%;
-               } 
+  #grillaIndex {
+    height: 2950px;
+    grid-template-rows: 5.08% 9% 83% 3%;
 
-#contenedorArticle { 
-        margin:0;
-        height: auto; 
-        display:grid;
-        row-gap:$gap;
-        grid-template-rows: 40.3%  32.3% 27.3%;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-                            "textoIndex"
-                            "seccionMedia"
-                            "seccionImg" ;
-                    }
+    #contenedorArticle {
+      margin: 0;
+      height: auto;
+      display: grid;
+      row-gap: $gap;
+      grid-template-rows: 40% 38% 22%;
+      grid-template-columns: 100%;
+      grid-template-areas:
+        "textoIndex"
+        "seccionMedia"
+        "seccionImg";
+    }
 
-.contenedor {
-    height: 100%;
-    max-width: 100%;
-    margin-top:45px;
-    display:flex; 
-    flex-flow: column nowrap;
-    row-gap: 20px;
-    grid-area: textoIndex;
-    
-  
+    .contenedor {
+      height: 100%;
+      max-width: 100%;
+      margin-top: 45px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
+      grid-area: textoIndex;
 
-    &__img {
-    @include maxAncho;
-    height:auto;
-    padding:0;
-    margin:0;
-           } 
+      &__img {
+        @include maxAncho;
+        height: auto;
+        padding: 0;
+        margin: 0;
+      }
 
+      &__texto {
+        max-width: 100%;
+        height: auto;
+        padding: 15px;
+        font-size: $fontS;
+      }
+    }
 
-    &__texto {
-     max-width: 100%;
-     height:auto;
-     padding:15px;
-     font-size: $fontS;
-     
-             }
+    .contenedorMedio {
+      height: 100%;
+      padding: 15px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 20px;
 
-             }   
+      &__titulo {
+        margin: 0;
+      }
 
-.contenedorMedio {
-    height: 100%;
-    padding:15px;
-    display:flex;
-    flex-flow: column nowrap;
-    row-gap: 20px;
+      &__texto {
+        height: 100%;
+        font-size: $fontS;
+      }
+    }
 
+    #seccionimg {
+      margin-top: 20px;
+      display: flex;
+      flex-flow: column nowrap;
+      grid-area: seccionImg;
+      height: 70%;
+      justify-items: center;
+      align-items: center;
+      padding-bottom: 20px;
 
+      #carouselExampleControls {
+        @include maxAncho;
+      }
+    }
+  }
 
-    &__titulo {
-    margin:0;
-}
-
-
-    &__texto {
-    height:100%;
-    font-size: $fontS;
-
-}
-
-
-
-
-}
-
-#seccionimg{
-    margin-top: 20px;
-    display:flex;
-    flex-flow: column nowrap;
-    grid-area: seccionImg;
-    height:70%;
-    justify-items:center;
-    align-items: center;
-    padding-bottom: 20px;
-
-    #carouselExampleControls {
-         @include maxAncho;
-     }
-
-
- }
-
-
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           FIN INDEX
 ---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            NOSOTROS
 ---------------------------------------------------------------*/
 
-#grillaNosotros {
-    height: 2680px;
-    grid-template-rows: 8% 7.5% 81% 5%;
+  #grillaNosotros {
+    height: 2550px;
+    grid-template-rows: 5.88% 11.11% 81% 5%;
 
-    main { 
-        margin:0;
-        padding:20px;
-        box-sizing: border-box;
-       position: relative;
+    main {
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
 
-     hr{
-         margin-bottom: 30px;
-     }
-      
+      hr {
+        margin-bottom: 30px;
+      }
 
-    .quienesSomos {
-        height:  auto;
-        margin:0;
-       font-size: $fontS;
-       row-gap: 0;
-        &__titulo{
-           background-color:white;
-            height:150px; 
-            position:absolute;
-       }
+      .quienesSomos {
+        height: auto;
+        grid-template-rows: 10% 90%;
+        margin: 0;
+        font-size: $fontS;
+        row-gap: 0;
+        &__titulo {
+          background-color: white;
+          height: 150px;
+          position: absolute;
+        }
+      }
+
+      .nuestrosServicios {
+        margin: auto;
+        margin-top: 100px;
+      }
     }
-    
-    .nuestrosServicios {
-        height: 450px;
-        position: relative; 
+  }
 
-    &__lista{
-        margin-bottom: 100px;
-    } 
-    }
-    
-
-    }
-}
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                            FIN NOSOTROS
 ---------------------------------------------------------------*/
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                           PRODUCTOS
 ---------------------------------------------------------------*/
 
-    #grillaProductos {
-    height: 2350px;    
-    grid-template-rows: 5% 10% 80% 5%;
+  #grillaProductos {
+    height: 2350px;
+    grid-template-rows: 6.38% 10% 80% 5%;
 
+    .reviews {
+      margin: auto;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
 
-.reviews {
-    margin:auto;
-    margin-bottom:30px;
-    position:relative;
-    padding-bottom: 56.25%;
-    height:0;
-    overflow: hidden;
-
-    iframe {
-        position:absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height:100%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 10;
+        width: 98%;
+        height: 100%;
+      }
     }
-}
+  }
 
-
-}
-
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                          FIN PRODUCTOS
 ---------------------------------------------------------------*/
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                       PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
-#grillaPreguntas {
+  #grillaPreguntas {
     height: 4200px;
-    grid-template-rows: 5%  5% auto 3%;
+    grid-template-rows: 3.57% 5.95% auto 3%;
 
     .preguntas__lista {
-        font-size:$fontML;
+      font-size: $fontML;
     }
-
-    
-}
-
 
     .respuestas {
-        &__titulo {
-            font-size: $fontML;
-        }
+      &__titulo {
+        font-size: $fontML;
+      }
 
-        &__contenido {
-        font-size:$fontS;
+      &__contenido {
+        font-size: $fontS;
         word-spacing: 0;
         line-height: 25px;
-        }
+      }
     }
+  }
 
-/*---------------------------------------------------------------
+  /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
 
+  /*---------------------------------------------------------------
+                             CONTACTO
+---------------------------------------------------------------*/
+
+  #grillaContacto {
+    height: 2200px;
+    grid-template-rows: 6.82% 11.36% 73.84% 5%;
+
+    #form {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas:
+        "nombre"
+        "apellido"
+        "servicio"
+        "formacion"
+        "mail"
+        "consulta"
+        "novedades"
+        "submit";
+      max-width: 90%;
+      height: 1350px;
+      row-gap: 5px;
+      padding: 0;
+
+      div {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input,
+      select {
+        max-width: 100%;
+      }
+
+      #consulta {
+        width: 250px;
+        height: 200px;
+      }
+    }
+  }
+
+  /*---------------------------------------------------------------
+                         FIN CONTACTO
+---------------------------------------------------------------*/
 }
