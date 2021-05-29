@@ -360,6 +360,8 @@ form {
     justify-content: space-evenly; }
     footer .redesSociales li {
       margin: 5px; }
+  .contenedor__texto {
+    width: 750px; }
   /*---------------------------------------------------------------
                           PRODUCTOS
 ---------------------------------------------------------------*/
@@ -555,7 +557,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaIndex {
     height: 2500px;
-    grid-template-rows: 11% 2.8% 84% 3%; }
+    grid-template-rows: 11% 2.8% 81% 4%; }
   #contenedorArticle {
     margin: 0;
     height: auto;
@@ -615,7 +617,7 @@ form {
 ---------------------------------------------------------------*/
   #grillaNosotros {
     height: 1900px;
-    grid-template-rows: 21% 3.68% 66% 7%; }
+    grid-template-rows: 19% 4% 70% 7%; }
     #grillaNosotros main {
       width: 100%;
       margin: 0;
@@ -654,6 +656,15 @@ form {
     row-gap: 5px; }
   /*---------------------------------------------------------------
                            FIN CONTACTO
+---------------------------------------------------------------*/
+  /*--
+PREGUNTAS FRECUENTES
+---------------------------------------------------------------*/
+  #grillaPreguntas {
+    height: 3500px;
+    grid-template-rows: 5% 6.25% 85% 4%; }
+  /*---------------------------------------------------------------
+                     FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/ }
 
 /*---------------------MEDIA QUERY TABLET -----------------------*/
@@ -787,8 +798,8 @@ form {
                       PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
   #grillaPreguntas {
-    height: 4000px;
-    grid-template-rows: 5% 6.25% 86% 3%; }
+    height: 4100px;
+    grid-template-rows: 5% 6.25% 85% 4%; }
   /*---------------------------------------------------------------
                      FIN PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
@@ -1145,7 +1156,7 @@ form {
                       PREGUNTAS FRECUENTES
 ---------------------------------------------------------------*/
   #grillaPreguntas {
-    height: 3900px;
+    height: 3750px;
     grid-template-rows: 3.85% 6.41% 86.74% 3%; }
     #grillaPreguntas .preguntas__lista {
       font-size: 18px; }
