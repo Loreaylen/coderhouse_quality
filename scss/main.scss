@@ -1,302 +1,270 @@
-@import "responsive";
-
-$techMono: 'Share Tech Mono', monospace;
-$oswald:  'Oswald', 'sans-serif';
-$roboto: 'Roboto Condensed', sans-serif;
-$colorNegro:  #161a1d;
-$colorRojoD8:#D80032;
-$colorRojoE: #E5383B;
+$techMono: "Share Tech Mono", monospace;
+$oswald: "Oswald", "sans-serif";
+$roboto: "Roboto Condensed", sans-serif;
+$colorNegro: #161a1d;
+$colorRojoD8: #d80032;
+$colorRojoE: #e5383b;
 $colorRojoBA: #ba181b;
-$colorGris8:#8D99AE;
+$colorGris8: #8d99ae;
 $colorGrisf: #f3f4f5;
 
-
-
-@mixin parrafo{
-    color:$colorNegro;
-    font-size: 20px;
-    font-family:  $oswald;
-    word-spacing: 3px;
-    line-height: 35px;
+@mixin parrafo {
+  color: $colorNegro;
+  font-size: 20px;
+  font-family: $oswald;
+  word-spacing: 3px;
+  line-height: 35px;
 }
 
-@mixin subtitulos{
-    color: $colorRojoBA;
-    text-align:center;
-    font-size:40px;
-    font-family: $techMono;
-    margin: 0;
+@mixin subtitulos {
+  color: $colorRojoBA;
+  text-align: center;
+  font-size: 40px;
+  font-family: $techMono;
+  margin: 0;
 }
-
 
 /*____________INDEX_______________*/
 
 #grillaIndex {
-    margin:0;
-    height: 2500px;
-    width: 100%;
-    display:grid;
-    grid-template-rows: 14% 2% 82% 2%;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-                        "Header"
-                        "Nav"
-                        "Section"
-                        "Footer"
+  margin: 0;
+  height: 2500px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 14% 2.8% 82% 2%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "Header"
+    "Nav"
+    "Section"
+    "Footer";
 }
 
-#contenedorArticle { 
-        grid-area: Section;
-        margin:0;
-        height: auto; 
-        display:flex;
-        flex-flow: column nowrap;
-        row-gap: 70px; 
-                            
-                    }
+#contenedorArticle {
+  grid-area: Section;
+  margin: 0;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 70px;
+}
 
 .contenedor {
-    height: 600px;
-    width: 100%; 
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows:13% 87%;
-    grid-template-areas: 
-                        "titulo titulo"
-                        "imagen texto";
-    align-items: center;
-    justify-items: center;                                          
+  height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 13% 87%;
+  grid-template-areas:
+    "titulo titulo"
+    "imagen texto";
+  align-items: center;
+  justify-items: center;
 
-
-
-    &__titulo {
+  &__titulo {
     grid-area: titulo;
-    margin-top:20px;
-}
+    margin-top: 20px;
+  }
 
-    &__texto {
+  &__texto {
     width: 800px;
     height: 300px;
     grid-area: texto;
-    justify-self:center;
-   
-    
-}
+    justify-self: center;
+  }
 
-    &__img {
-    
+  &__img {
     grid-area: imagen;
     height: 450px;
     width: 675px;
-    padding:0;
-    
+    padding: 0;
+  }
 }
-
-}
-
 
 .contenedorMedio {
-    display:grid;
-    height: 350px;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas: "grabaciones"
-                         "contenidoMedia";
-    margin:0;
-    justify-items: center;
-    align-items: center;
-    background-color: $colorGrisf;
+  display: grid;
+  height: 350px;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-template-areas:
+    "grabaciones"
+    "contenidoMedia";
+  margin: 0;
+  justify-items: center;
+  align-items: center;
+  background-color: $colorGrisf;
 
-   &__titulo {
+  &__titulo {
     grid-area: grabaciones;
-    margin:0;
-}
+    margin: 0;
+  }
 
-&__texto {
+  &__texto {
     padding: 30px;
-} 
+  }
 }
-
 
 #carouselExampleControls {
-    max-width: 950px;
-    display:flex;
-    justify-content: center;
-     align-items: center;
-    margin:auto
+  max-width: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-
-
-
 
 /*--------FIN INDEX--------------*/
 
 /*____________ NOSOTROS____________*/
 
 #grillaNosotros {
-    margin:0;
-    height: 1500px;
-    width: 100%;
-    display:grid;
-    grid-template-rows: 28% 4% 64% 4%;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-                        "Header"
-                        "Nav"
-                        "Main"
-                        "Footer"
+  margin: 0;
+  height: 1500px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 28% 4.67% 64% 4%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "Header"
+    "Nav"
+    "Main"
+    "Footer";
 }
 
-
 .quienesSomos {
+  margin: 15px;
+  height: 500px;
+  width: 99%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 85%;
+  grid-template-areas:
+    "quienesSomos"
+    "texto";
 
-    margin:15px;
-    height: 500px;
-      width: 99%;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 15% 85%;
-      grid-template-areas: 
-                          "quienesSomos"
-                          "texto";
- 
-    &__titulo {
+  &__titulo {
     color: $colorNegro;
     font-size: 40px;
     font-family: $techMono;
     text-align: center;
-              }
+  }
 
-    &__contenido {
-        @include parrafo;
-        margin: 15px;
-        
-        
-    }          
-    }  
+  &__contenido {
+    @include parrafo;
+    margin: 15px;
+  }
+}
 
 .nuestrosServicios {
-     margin:15px;
-    height: 300px;
-    width: 99%;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 85%;
-    grid-template-areas: 
-                        "nuestrosServicios"
-                        "texto";
-    justify-items: center;
-    align-items: center;
+  margin: 15px;
+  height: 300px;
+  width: 99%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 85%;
+  grid-template-areas:
+    "nuestrosServicios"
+    "texto";
+  justify-items: center;
+  align-items: center;
 
-    &__titulo {
+  &__titulo {
+    @include subtitulos;
+    color: $colorRojoD8;
+    font-size: 25px;
+  }
 
-        @include subtitulos;
-        color:$colorRojoD8;
-        font-size: 25px;
-    }
-
-    &__lista {
-    color:$colorRojoBA;
+  &__lista {
+    color: $colorRojoBA;
     font-size: 22px;
-    font-family:$techMono;
-    list-style: url(../img/rsz_next.png) ;
+    font-family: $techMono;
+    list-style: url(../img/rsz_next.png);
     list-style-position: inside;
-    
-    }
-}    
+  }
+}
 
 /*---------FIN NOSOTROS--------------*/
 
 /*_____________PREGUNTAS FRECUENTES______________*/
 
 #grillaPreguntas {
-    margin:0;
-    height: 3500px;
-    width: 100%;
-    display:grid;
-    grid-template-rows: 12% 1.71% 84.58% 1.71%;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-                        "Header"
-                        "Nav"
-                        "Section"
-                        "Footer"
+  margin: 0;
+  height: 3500px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 12% 1.71% 84.58% 1.71%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "Header"
+    "Nav"
+    "Section"
+    "Footer";
 }
 
 .preguntas {
-    display:flex;
-    flex-flow: column wrap;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 
-    &__titulo { 
-        grid-area: preguntas;
+  &__titulo {
+    grid-area: preguntas;
+  }
+
+  &__lista {
+    font-size: 22px;
+    font-family: $roboto;
+    width: 300px;
+    margin-bottom: 50px;
+    grid-area: listadoPreguntas;
+
+    &:hover {
+      color: $colorGris8;
     }
 
-    &__lista {
-        font-size: 22px;
-        font-family: $roboto;
-        width:300px;
-        margin-bottom:50px;
-        grid-area:listadoPreguntas;
-
-        &:hover {
-            color:$colorGris8;
-        }
-
-        &:active {
-            text-shadow: 1px 2px 2px $colorNegro;
-        }
+    &:active {
+      text-shadow: 1px 2px 2px $colorNegro;
     }
-     
-    &__item a {
+  }
+
+  &__item a {
     text-decoration: none;
-    color:$colorRojoE;
-    }
+    color: $colorRojoE;
+  }
 }
 
 .respuestas {
-   
-    &__contenido {
-        margin:20px;
+  &__contenido {
+    margin: 20px;
+  }
+
+  &__titulo {
+    @include subtitulos;
+    text-align: left;
+  }
+
+  &__volver {
+    @include parrafo;
+
+    color: $colorRojoBA;
+    font-weight: bolder;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+
+    &:hover {
+      text-shadow: 1px 1px 2px $colorNegro;
     }
 
-    &__titulo {
-         
-        @include subtitulos;
-         text-align: left;
+    &:active {
+      @extend .respuestas__volver:hover;
+      transform: translateY(3px);
     }
+  }
 
-    &__volver {
-
-     @include parrafo;   
-    
-     color:$colorRojoBA;
-     font-weight: bolder;
-     text-decoration: none; 
-     display:flex;
-     justify-content: flex-end;
-
-
-     &:hover {
-         text-shadow: 1px 1px 2px $colorNegro;
-     }
-     
-     &:active {
-         @extend .respuestas__volver:hover;
-        transform:translateY(3px)
-     }
-
-     }
-    
-
-    &__titulo--sub {
-        font-family: $techMono;
-        color:$colorRojoE;
-        font-size: 18px;
-    }
-  
-
-
+  &__titulo--sub {
+    font-family: $techMono;
+    color: $colorRojoE;
+    font-size: 18px;
+  }
 }
 
 /*---------FIN PREGUNTAS FRECUENTES--------------*/
@@ -304,72 +272,65 @@ $colorGrisf: #f3f4f5;
 /*________________PRODUCTOS___________________*/
 
 #grillaProductos {
-    margin:0;
-    height: 3350px;
-    width: 100%;
-    display:grid;
-    grid-template-rows: 12.55% 1.79% 83.71% 1.95%;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-                        "Header"
-                        "Nav"
-                        "Section"
-                        "Footer"
+  margin: 0;
+  height: 2800px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 12.55% 2.5% 83.71% 1.95%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "Header"
+    "Nav"
+    "Section"
+    "Footer";
 }
 
 .carouselSintes {
-    max-width: 400px;
-    height: 400px;
-    margin: auto;
+  max-width: 400px;
+  max-height: 400px;
+  margin: auto;
 
+  #carouselExampleDark {
+    @extend .carouselSintes;
+  }
 
-    #carouselExampleDark {
-        @extend .carouselSintes;
-    }
-
-    .carousel-caption {
-    position: absolute;
-    top: 250px;
+  .carousel-caption {
     margin: 0;
     padding: 0;
+  }
 }
-}
-
 
 .carouselMicros {
-    max-width: 235px;
+  max-width: 235px;
+  height: 390px;
+  margin: auto;
+
+  #carouselDeMicros {
+    @extend .carouselMicros;
+  }
+
+  .carousel-item {
     height: 390px;
-    margin: auto;
+  }
 
-
-    #carouselDeMicros {
-        @extend .carouselMicros;
-    }
-
-    .carousel-item {
-       height:390px;
-    }
-
-    .carousel-caption {
+  .carousel-caption {
     position: absolute;
     top: 225px;
     margin: 0;
     padding: 0;
+  }
 }
-}
 
-.reviews{ display:flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 30px;
+.reviews {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 30px;
 
-
-iframe {
+  iframe {
     height: 405px;
     width: 720px;
-
-}
-
+  }
 }
 
 /*--------------FIN PRODUCTOS---------------*/
@@ -377,142 +338,141 @@ iframe {
 /*________________CONTACTO___________________*/
 
 #grillaContacto {
-    margin:0;
-    height: 2000px;
-    width: 100%;
-    display:grid;
-    grid-template-rows: 21% 3% 73% 3%;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-                        "Header"
-                        "Nav"
-                        "Section"
-                        "Footer"
+  margin: 0;
+  height: 2000px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 21% 3% 73% 3%;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "Header"
+    "Nav"
+    "Section"
+    "Footer";
 }
-.consulta label{
 
-    margin-top: -44px;
-}
-.consulta label{
-    margin-bottom: 12px;
-}
 form {
-    background-color: $colorGrisf;
-    padding:20px;
-    margin: auto;
-    width: 50%;
-    height:auto;   
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-                         "nombre     mail"
-                         "apellido   consulta"
-                         "servicio  consulta"
-                         "formacion   consulta"
-                          "novedades novedades"
-                          "submit     submit";
-    justify-items:center;
-    align-items:center;
-    row-gap: 20px;    
-    text-align: center;
-    border-radius: 5px;
+  background-color: $colorGrisf;
+  padding: 20px;
+  margin: auto;
+  max-width: 50%;
+  min-width: 40%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "nombre     mail"
+    "apellido   consulta"
+    "servicio  consulta"
+    "formacion   consulta"
+    "novedades novedades"
+    "submit     submit";
+  justify-items: center;
+  align-items: center;
+  row-gap: 20px;
+  text-align: center;
+  border-radius: 5px;
 
+  .nombre {
+    grid-area: nombre;
+  }
+  .apellido {
+    grid-area: apellido;
+  }
+  .formacion {
+    grid-area: formacion;
+  }
+  .servicio {
+    grid-area: servicio;
+  }
+  .mail {
+    grid-area: mail;
+  }
+  .consulta {
+    grid-area: consulta;
+  }
+  .novedades {
+    grid-area: novedades;
+  }
+  .submit {
+    grid-area: submit;
+  }
 
+  div {
+    width: 80%;
+  }
 
-  
-    
-    .nombre { grid-area: nombre; }
-    .apellido { grid-area:apellido; }
-    .formacion {grid-area:formacion;}
-    .servicio {grid-area:servicio;}
-    .mail {grid-area:mail;}
-    .consulta {grid-area:consulta;}
-    .novedades {grid-area:novedades;}
-    .submit {grid-area:submit;}
-
-
-
-
-    legend {
-    padding: 20px;   
+  legend {
+    padding: 20px;
     font-size: 26px;
-    color:$colorRojoBA;
-    font-family: 'Roboto Condensed', sans-serif;
-    
-}
- 
-    label {
-    color:$colorRojoE;
-    font-family:  'Oswald', 'sans-serif';
+    color: $colorRojoBA;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  label {
+    color: $colorRojoE;
+    font-family: "Oswald", "sans-serif";
     letter-spacing: 1px;
     font-weight: bolder;
-    display:block;
+    display: block;
     font-size: 20px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
+  }
 
-
-
-}
-    
-    
-    input  {
-    
-    font-family: 'Oswald', 'sans-serif';
+  input {
+    font-family: "Oswald", "sans-serif";
     height: 40px;
-    width:350px;
-    border:1px solid $colorGris8;
+    width: 100%;
+    border: 1px solid $colorGris8;
     background-color: transparent;
     outline: none;
 
     &:hover {
-    border-bottom: 1px solid $colorNegro;
-}
+      border-bottom: 1px solid $colorNegro;
+    }
+  }
 
-    
-}
-
-    .radio {
+  .radio {
     height: 15px;
     width: 15px;
-    display:inline-block;
+    display: inline-block;
     background-color: transparent;
-}
+  }
 
-
-select {
+  select {
     outline: none;
 
     &:hover {
-    border:1px solid $colorNegro;
-}
+      border: 1px solid $colorNegro;
+    }
+  }
 
-}
-
-
-select, option {
-    color:$colorGris8;
-    font-size:15px ;
-    font-family:'Share Tech Mono', monospace;
-    height:40px;
-    width:360px;
+  select,
+  option {
+    color: $colorGris8;
+    font-size: 15px;
+    font-family: "Share Tech Mono", monospace;
+    height: 40px;
+    width: 100%;
     background-color: transparent;
-    border:1px solid $colorGris8;
-}
+    border: 1px solid $colorGris8;
+  }
 
-textarea {
+  textarea {
     min-height: 200px;
-    min-width: 350px;
+    max-width: 100%;
     background-color: transparent;
     border: 1px solid $colorGris8;
     outline: none;
-}
+    padding: 22.5px;
+  }
 
-.boton {
-    color:$colorGrisf;
-    font-family: 'Oswald', 'sans-serif';
+  .boton {
+    color: $colorGrisf;
+    font-family: "Oswald", "sans-serif";
     font-weight: bolder;
-    background-color:$colorRojoBA;
+    background-color: $colorRojoBA;
     letter-spacing: 1px;
     font-size: 15px;
     height: 40px;
@@ -522,56 +482,43 @@ textarea {
     border: none;
     box-shadow: 1px 2px 2px $colorNegro;
 
-    &:hover{
-    transform:translateY(-2px);
-    box-shadow: 2px 3px 2px $colorNegro;
-}
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 2px 3px 2px $colorNegro;
+    }
 
     &:active {
-    border:none;
-    transform:translateY(1px)
-}
-   
+      border: none;
+      transform: translateY(1px);
+    }
+  }
 
-}
-
-#checkbox {
-    padding:0;
-    margin:0;
-    height:20px;
+  #checkbox {
+    padding: 0;
+    margin: 0;
+    height: 20px;
     width: 20px;
+  }
 
-}
-
-#novedades{
+  #novedades {
     font-size: 15px;
-    padding:0;
-    margin:0;
-    display:inline-block;
-    
-
-
-}
-.etiquetaDos{
-    display:inline-block;
-    color:$colorGris8;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  .etiquetaDos {
+    display: inline-block;
+    color: $colorGris8;
     font-size: 15px;
     margin: 10px;
-    padding:0;
+    padding: 0;
 
     &:hover {
-    color:$colorNegro;
+      color: $colorNegro;
+    }
+  }
 }
-
-
-}
-
-}
-
-
-
-
-
-
 
 /*---------------FIN CONTACTO--------------*/
+
+@import "responsive";

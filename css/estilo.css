@@ -173,42 +173,6 @@ main {
 }
 
 
-
-
-
-
-
-/*Cuerpo de Contacto*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 
 footer {
@@ -255,25 +219,11 @@ footer p {
     width:30px;
 }
 
-#facebook{
-    animation: redes infinite 4s;
+#facebook:hover, #linkedIn:hover, #twitter:hover, #instagram:hover {
+    animation: redes infinite 1s;
     
 }
 
-#linkedIn {
-    animation: redes infinite 4s;
-    animation-delay: 0.2s;
-}
-
-#twitter {
-    animation: redes infinite 4s;
-    animation-delay: 0.4s;
-}
-
-#instagram {
-    animation: redes infinite 4s;
-    animation-delay: 0.6s;
-}
 @keyframes redes {
     0% {transform:rotateY(0deg)}
     50% {transform:rotateY(180deg)}
